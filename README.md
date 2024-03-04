@@ -1,2 +1,2 @@
 # HaloTracker.org
-Halo MCC Achievement Tracker
+Halo Achievement Tracker
