@@ -27,8 +27,20 @@ _Note: Everything is still in active development with lots of bugs_
 - Viewing Achievement Guides
 - Better Filtering options
 - Add Sorting options
-- Searching for players via Xbox or Steam to view their achievements
+- Searching for players via Xbox to view their achievements
+- Searching for players via Steam to view their achievements
 - Comparing achievements between different players
 - Add Achievements for Halo Wars: Definitive Edition
 - Add Achievements for Halo: Spartan Assault
 - Add Achievements for Halo: Spartan Strike
+
+## Platform Support
+
+| Platform   | Minimum Version            |
+| ---------- | -------------------------- |
+| Windows    | *Coming soon!*             |
+| Android    | *Coming soon!*             |
+| MacOS      | *Coming soon!*             |
+| iOS / tvOS | *Coming soon!*             |
+| Linux      | *Coming soon!*             |
+| Web        | *Coming soon!*             |
