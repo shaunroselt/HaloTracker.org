@@ -44,3 +44,7 @@ _Note: Everything is still in active development with lots of bugs_
 | iOS / tvOS | *Coming soon!*             |
 | Linux      | *Coming soon!*             |
 | Web        | *Coming soon!*             |
+
+## Release Notes (Change Log)
+[RELEASE_NOTES.md](https://github.com/shaunroselt/HaloTracker.org/blob/master/RELEASE_NOTES.md)
+
