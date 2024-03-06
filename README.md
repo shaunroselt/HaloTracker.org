@@ -18,3 +18,17 @@ _Note: Everything is still in active development with lots of bugs_
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/shaunroselt/HaloTracker.org/master/LICENSE)
 [![wakatime](https://wakatime.com/badge/github/shaunroselt/HaloTracker.org.svg)](https://wakatime.com/badge/github/shaunroselt/HaloTracker.org)
+
+## Current Features
+- Viewing Achievements for Halo MCC, Halo 5 and Halo Infinite
+- Filtering Achievements by campaign, co-op campaign and multiplayer
+
+## Planned Features
+- Viewing Achievement Guides
+- Better Filtering options
+- Add Sorting options
+- Searching for players via Xbox or Steam to view their achievements
+- Comparing achievements between different players
+- Add Achievements for Halo Wars: Definitive Edition
+- Add Achievements for Halo: Spartan Assault
+- Add Achievements for Halo: Spartan Strike
