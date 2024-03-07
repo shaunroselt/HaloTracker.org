@@ -201,6 +201,7 @@
             <ResourceId>JpgImage_4</ResourceId>
         </RcItem>
         <None Include="assets\house.svg"/>
+        <None Include="assets\list.svg"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -566,6 +567,12 @@
                     </Platform>
                 </DeployFile>
                 <DeployFile LocalName="assets\link.svg" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\list.svg" Configuration="Release" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>

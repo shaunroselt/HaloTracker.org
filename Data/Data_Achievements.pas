@@ -2545,7 +2545,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Skulltaker Halo 3: Mythic';
@@ -3135,7 +3135,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Vetro Strike';
@@ -4995,7 +4995,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'The Answer is Simple';
@@ -6105,7 +6105,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Whistle Stop Tour';
@@ -6465,7 +6465,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Vandalized';
@@ -6765,7 +6765,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'No Easy Way Out';
@@ -6805,7 +6805,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Invaders Repelled';
@@ -7088,7 +7088,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Bringing in the Big Guns';
@@ -7128,7 +7128,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Off to the Races';
@@ -7138,7 +7138,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Flag Monger';
@@ -7148,7 +7148,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Spartan Decimation';
@@ -7158,7 +7158,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Into the Fire';
@@ -7802,7 +7802,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Passion for Fashion';
@@ -7842,7 +7842,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: '"Need a Weapon?"';
@@ -7872,7 +7872,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'You''re Up, Rook''';
@@ -7892,7 +7892,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Running Laps';
@@ -7902,7 +7902,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Customary';
@@ -7932,7 +7932,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'That Thing on the Left is the Brake';
@@ -7952,7 +7952,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Sharpshooter';
@@ -7982,7 +7982,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Bomb Returned';
@@ -7992,7 +7992,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Control Freak';
@@ -8002,7 +8002,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Zone Ranger';
@@ -8012,7 +8012,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Back to the Chopper';
@@ -8022,11 +8022,11 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'First Contact';
-      description: 'Hidden achievement, mouse over to reveal: Lost, and found.';
+      description: 'Lost, and found.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/58f1c8e0f28175a5c42d8cbb89a1409c172a79a6.jpg';
       percent_achieved: '12.2%';
       Gamerscore: -1;
@@ -8046,7 +8046,7 @@ const
     ),
     (
       name: 'Together. Again?';
-      description: 'Hidden achievement, mouse over to reveal: Explore the underbelly of Zeta Halo and retrieve a weapon to turn the tide of this conflict.';
+      description: 'Explore the underbelly of Zeta Halo and retrieve a weapon to turn the tide of this conflict.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/58f1c8e0f28175a5c42d8cbb89a1409c172a79a6.jpg';
       percent_achieved: '11.8%';
       Gamerscore: -1;
@@ -8076,7 +8076,7 @@ const
     ),
     (
       name: 'Ascension';
-      description: 'Hidden achievement, mouse over to reveal: Defeat the Banished warlord Tremonius.';
+      description: 'Defeat the Banished warlord Tremonius.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/58f1c8e0f28175a5c42d8cbb89a1409c172a79a6.jpg';
       percent_achieved: '11.5%';
       Gamerscore: -1;
@@ -8106,7 +8106,7 @@ const
     ),
     (
       name: 'Zeta';
-      description: 'Hidden achievement, mouse over to reveal: Fight your way through Outpost Tremonius and step out onto the surface of Zeta Halo.';
+      description: 'Fight your way through Outpost Tremonius and step out onto the surface of Zeta Halo.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/58f1c8e0f28175a5c42d8cbb89a1409c172a79a6.jpg';
       percent_achieved: '11.4%';
       Gamerscore: -1;
@@ -8132,7 +8132,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'A Fellow of Infinite Jest';
@@ -8142,7 +8142,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Working Remote';
@@ -8152,7 +8152,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Reclaimer';
@@ -8196,7 +8196,7 @@ const
     ),
     (
       name: 'Fallen';
-      description: 'Hidden achievement, mouse over to reveal: Follow the UNSC signal to a Banished stronghold called the Tower. Find the source. Get out alive.';
+      description: 'Follow the UNSC signal to a Banished stronghold called the Tower. Find the source. Get out alive.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/58f1c8e0f28175a5c42d8cbb89a1409c172a79a6.jpg';
       percent_achieved: '10.3%';
       Gamerscore: -1;
@@ -8236,7 +8236,7 @@ const
     ),
     (
       name: 'Unearthed';
-      description: 'Hidden achievement, mouse over to reveal: Shut down the Banished mining laser and gain access to the Conservatory.';
+      description: 'Shut down the Banished mining laser and gain access to the Conservatory.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/58f1c8e0f28175a5c42d8cbb89a1409c172a79a6.jpg';
       percent_achieved: '9.1%';
       Gamerscore: -1;
@@ -8282,7 +8282,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Whip-Riding the Ghost';
@@ -8296,7 +8296,7 @@ const
     ),
     (
       name: 'Hunter. Killer.';
-      description: 'Hidden achievement, mouse over to reveal: Defeat the Hunter pair stationed at the base of the Spire.';
+      description: 'Defeat the Hunter pair stationed at the base of the Spire.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/58f1c8e0f28175a5c42d8cbb89a1409c172a79a6.jpg';
       percent_achieved: '8.6%';
       Gamerscore: -1;
@@ -8306,7 +8306,7 @@ const
     ),
     (
       name: 'Pelican Down';
-      description: 'Hidden achievement, mouse over to reveal: Shut down the first Spire and stop Zeta''s Reformation before it''s too late.';
+      description: 'Shut down the first Spire and stop Zeta''s Reformation before it''s too late.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/e5ebad6096c08d8926dad3e85faa312554155a67.jpg';
       percent_achieved: '8.6%';
       Gamerscore: -1;
@@ -8316,7 +8316,7 @@ const
     ),
     (
       name: 'One Down…';
-      description: 'Hidden achievement, mouse over to reveal: Destroy a Banished anti-aircraft gun.';
+      description: 'Destroy a Banished anti-aircraft gun.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/58f1c8e0f28175a5c42d8cbb89a1409c172a79a6.jpg';
       percent_achieved: '8.4%';
       Gamerscore: -1;
@@ -8326,7 +8326,7 @@ const
     ),
     (
       name: 'Brothers Grim';
-      description: 'Hidden achievement, mouse over to reveal: Take down the Spartan Killers Hyperius and Tovarus.';
+      description: 'Take down the Spartan Killers Hyperius and Tovarus.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/58f1c8e0f28175a5c42d8cbb89a1409c172a79a6.jpg';
       percent_achieved: '8.2%';
       Gamerscore: -1;
@@ -8342,7 +8342,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Gun Runner';
@@ -8376,7 +8376,7 @@ const
     ),
     (
       name: 'Light the Way';
-      description: 'Hidden achievement, mouse over to reveal: Reach the Beacons, assemble the Sequence, and gain access to the Command Spire.';
+      description: 'Reach the Beacons, assemble the Sequence, and gain access to the Command Spire.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/58f1c8e0f28175a5c42d8cbb89a1409c172a79a6.jpg';
       percent_achieved: '7.3%';
       Gamerscore: -1;
@@ -8386,7 +8386,7 @@ const
     ),
     (
       name: 'What Will It Take?';
-      description: 'Hidden achievement, mouse over to reveal: Enter the Nexus and learn the secrets of the Spires. Trust is a fragile thing, isn''t it?';
+      description: 'Enter the Nexus and learn the secrets of the Spires. Trust is a fragile thing, isn''t it?';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/58f1c8e0f28175a5c42d8cbb89a1409c172a79a6.jpg';
       percent_achieved: '7.2%';
       Gamerscore: -1;
@@ -8406,7 +8406,7 @@ const
     ),
     (
       name: 'Hear These Words!';
-      description: 'Hidden achievement, mouse over to reveal: Infiltrate the Command Spire and put an end to the Reformation.';
+      description: 'Infiltrate the Command Spire and put an end to the Reformation.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/58f1c8e0f28175a5c42d8cbb89a1409c172a79a6.jpg';
       percent_achieved: '7.1%';
       Gamerscore: -1;
@@ -8416,7 +8416,7 @@ const
     ),
     (
       name: 'Together. Again.';
-      description: 'Hidden achievement, mouse over to reveal: A friend is in danger and time is running out. It''s time to face your past and save your future.';
+      description: 'A friend is in danger and time is running out. It''s time to face your past and save your future.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/58f1c8e0f28175a5c42d8cbb89a1409c172a79a6.jpg';
       percent_achieved: '7.0%';
       Gamerscore: -1;
@@ -8432,7 +8432,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Eld Aficionado';
@@ -8446,7 +8446,7 @@ const
     ),
     (
       name: 'Reckoning';
-      description: 'Hidden achievement, mouse over to reveal: Storm the House of Reckoning.';
+      description: 'Storm the House of Reckoning.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/58f1c8e0f28175a5c42d8cbb89a1409c172a79a6.jpg';
       percent_achieved: '6.8%';
       Gamerscore: -1;
@@ -8456,7 +8456,7 @@ const
     ),
     (
       name: 'Legends';
-      description: 'Hidden achievement, mouse over to reveal: At the end he was just a soldier. Hoping he''d done the right thing.';
+      description: 'At the end he was just a soldier. Hoping he''d done the right thing.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/e5ebad6096c08d8926dad3e85faa312554155a67.jpg';
       percent_achieved: '6.7%';
       Gamerscore: -1;
@@ -8476,7 +8476,7 @@ const
     ),
     (
       name: 'Too Many Goodbyes';
-      description: 'Hidden achievement, mouse over to reveal: Defeat the Harbinger. Confront the truth.';
+      description: 'Defeat the Harbinger. Confront the truth.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/58f1c8e0f28175a5c42d8cbb89a1409c172a79a6.jpg';
       percent_achieved: '6.5%';
       Gamerscore: -1;
@@ -8522,7 +8522,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Bare Your Fangs';
@@ -8572,7 +8572,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Resurgency';
@@ -8602,7 +8602,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Bloodstars'' Bane';
@@ -8642,7 +8642,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'All-Seeing I';
@@ -8672,7 +8672,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Thrusters On Full';
@@ -8722,7 +8722,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Secret Stash';
@@ -8732,7 +8732,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Fight Hard, Die Well';
@@ -8772,7 +8772,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Armory Amore';
@@ -8882,7 +8882,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Multiplayer'];
     ),
     (
       name: 'Off the Air';
@@ -8926,7 +8926,7 @@ const
     ),
     (
       name: 'Greased Lightning';
-      description: 'Hidden achievement, mouse over to reveal: Complete the Movement Yard in under 25 seconds.';
+      description: 'Complete the Movement Yard in under 25 seconds.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/d9403eacdc5cf94a3be41136cd9f0ea5da6f8c69.jpg';
       percent_achieved: '0.8%';
       Gamerscore: -1;

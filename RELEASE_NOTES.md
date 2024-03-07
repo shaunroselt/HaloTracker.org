@@ -10,13 +10,14 @@
 
 
 ## Release Notes
-* [Version 1.0.0 (07/03/2024)](#version-100-07032024)
-* [Version 1.0.1 (08/03/2024)](#version-101-08032024)
+* [Version 1.0.0 (2024/03/07)](#version-100-20240307)
+* [Version 1.0.1 (2024/03/08)](#version-101-20240308)
+* [Version 1.0.2 (2024/03/09)](#version-102-20240309)
 
 
-## Version 1.0.0 (07/03/2024)
-![Home Page for Halo Achievement Tracker (HaloTracker.org) - Version 1.0.0 (07/03/2024)](https://github.com/shaunroselt/HaloTracker.org/assets/5418178/f0200da5-9108-45b7-952a-4817ee110518)
-![Achievements Page for Halo Achievement Tracker (HaloTracker.org) - Version 1.0.0 (07/03/2024)](https://github.com/shaunroselt/HaloTracker.org/assets/5418178/5d74a68a-3724-49d8-a4bc-834856f12d3d)
+## Version 1.0.0 (2024/03/07)
+![Home Page for Halo Achievement Tracker (HaloTracker.org) - Version 1.0.0 (2024/03/07)](https://github.com/shaunroselt/HaloTracker.org/assets/5418178/f0200da5-9108-45b7-952a-4817ee110518)
+![Achievements Page for Halo Achievement Tracker (HaloTracker.org) - Version 1.0.0 (2024/03/07)](https://github.com/shaunroselt/HaloTracker.org/assets/5418178/5d74a68a-3724-49d8-a4bc-834856f12d3d)
 This is the first version of the website. The first version is quite basic and barebone with only the ability to view achievements.
 - View Achievements for Halo: The Master Chief Collection
 - View Achievements for Halo 5: Guardians
@@ -24,7 +25,12 @@ This is the first version of the website. The first version is quite basic and b
 - View Percentage of players that have achieved an achievement
 - Basic Achievement Filtering based on Campaign, Co-op Campaign, Multiplayer, and Other (Not Filtered Yet)
 
-## Version 1.0.1 (08/03/2024)
-![Home Page for Halo Achievement Tracker (HaloTracker.org) - Version 1.0.1 (08/03/2024)](https://github.com/shaunroselt/HaloTracker.org/assets/5418178/91f8fdc9-f9e1-4974-af80-92ace41fe55b)
+## Version 1.0.1 (2024/03/08)
+![Home Page for Halo Achievement Tracker (HaloTracker.org) - Version 1.0.1 (2024/03/08)](https://github.com/shaunroselt/HaloTracker.org/assets/5418178/91f8fdc9-f9e1-4974-af80-92ace41fe55b)
 - Better Mobile Support
 - Changed "Home" icon in the left menu
+
+## Version 1.0.2 (2024/03/09)
+- Better Mobile Support
+- Improved Achievement Filter Criteria
+- Fixed some incorrect Achievement descriptions

@@ -2,6 +2,7 @@ object frmMain: TfrmMain
   Width = 1820
   Height = 1353
   OnCreate = WebFormCreate
+  OnResize = WebFormResize
   OnShow = WebFormShow
   object BackgroundVideo: TWebMultimediaPlayer
     Left = 0
@@ -38,11 +39,11 @@ object frmMain: TfrmMain
       ShowCaption = False
       object WebLabel2: TWebLabel
         AlignWithMargins = True
-        Left = 20
+        Left = 70
         Top = 0
-        Width = 1086
+        Width = 1036
         Height = 70
-        Margins.Left = 20
+        Margins.Left = 13
         Margins.Top = 0
         Margins.Right = 0
         Margins.Bottom = 0
@@ -58,6 +59,7 @@ object frmMain: TfrmMain
         ParentFont = False
         WordWrap = True
         WidthPercent = 100.000000000000000000
+        ExplicitLeft = 20
         ExplicitWidth = 323
         ExplicitHeight = 38
       end
@@ -170,6 +172,34 @@ object frmMain: TfrmMain
           ExplicitHeight = 31
         end
       end
+      object btnMultiView: TWebButton
+        AlignWithMargins = True
+        Left = 13
+        Top = 13
+        Width = 44
+        Height = 44
+        Cursor = crHandPoint
+        Hint = 'View Change Log'
+        Margins.Left = 13
+        Margins.Top = 13
+        Margins.Right = 0
+        Margins.Bottom = 13
+        Align = alLeft
+        Color = clHighlight
+        ChildOrder = 4
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -21
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        HeightPercent = 100.000000000000000000
+        ParentFont = False
+        ShowHint = True
+        WidthPercent = 100.000000000000000000
+        OnClick = btnMultiViewClick
+        OnMouseEnter = ButtonMouseEnter
+        OnMouseLeave = ButtonMouseLeave
+      end
     end
     object WebPanel9: TWebPanel
       Left = 0
@@ -193,7 +223,7 @@ object frmMain: TfrmMain
       Color = clWindow
       ShowCaption = False
     end
-    object WebSplitter1: TWebSplitter
+    object MultiViewSplitter: TWebSplitter
       Left = 350
       Top = 71
       Width = 1
@@ -201,6 +231,8 @@ object frmMain: TfrmMain
       Align = alLeft
       ChildOrder = 5
       Color = clWhite
+      Visible = False
+      OnMoved = MultiViewSplitterMoved
     end
     object MultiViewContainer: TWebPanel
       Left = 0
@@ -218,7 +250,7 @@ object frmMain: TfrmMain
         Top = 0
         Width = 350
         Height = 1232
-        Align = alLeft
+        Align = alClient
         BorderStyle = bsNone
         ChildOrder = 4
         Color = clWindow

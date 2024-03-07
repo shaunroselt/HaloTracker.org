@@ -178,6 +178,24 @@ end;
 procedure TFrame_Settings.WebFrameResize(Sender: TObject);
 begin
   if (PageCreated = False) then StylePage;
+
+  if layUsefulLinks.Width > 600 then
+  begin
+    layUsefulLinks.Height := 176;
+    layNavLicense.Top := layNavSourceCode.Top;
+    layNavLicense.Left := 378;
+    layNavReportAProblem.Top := layNavDownloadApp.Top;
+    layNavReportAProblem.Left := 378;
+  end else
+  begin
+    layUsefulLinks.Height := 176 + (layNavDownloadApp.Height * 2);
+
+    layNavLicense.Top := layNavDownloadApp.Top + layNavDownloadApp.Height;
+    layNavLicense.Left := layNavDownloadApp.Left;
+    layNavReportAProblem.Top := layNavLicense.Top + layNavLicense.Height;
+    layNavReportAProblem.Left := layNavDownloadApp.Left;
+  end;
+
 end;
 
 end.

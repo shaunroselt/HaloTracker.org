@@ -78,13 +78,14 @@ type
     btnNavHaloInfinite: TWebPanel;
     lblNavHaloInfinite: TWebLabel;
     imgNavHaloInfinite: TWebImageControl;
-    WebSplitter1: TWebSplitter;
+    MultiViewSplitter: TWebSplitter;
     GetAchievementsHaloInfinite: TWebHttpRequest;
     MultiViewContainer: TWebPanel;
     WebHttpRequest1: TWebHttpRequest;
     btnProfile: TWebPanel;
     WebImageControl1: TWebImageControl;
     lblProfile: TWebLabel;
+    btnMultiView: TWebButton;
     procedure WebFormCreate(Sender: TObject);
     procedure ButtonMouseEnter(Sender: TObject);
     procedure ButtonMouseLeave(Sender: TObject);
@@ -96,8 +97,12 @@ type
     procedure WebFormShow(Sender: TObject);
     procedure btnSearchClick(Sender: TObject);
     procedure WebPanelMouseLeave(Sender: TObject);
+    procedure btnMultiViewClick(Sender: TObject);
+    procedure MultiViewSplitterMoved(Sender: TObject);
+    procedure WebFormResize(Sender: TObject);
   private
     { Private declarations }
+    MultiViewWidth: UInt64;
     procedure CreatePages();
     procedure SelectFrame(FrameLayoutName: String);
   public
@@ -134,6 +139,12 @@ begin
   NavMouseLeave(Sender);
 
 //  Application.Navigate('index.html?page='+ToolBackendName.ToLower);
+end;
+
+procedure TfrmMain.btnMultiViewClick(Sender: TObject);
+begin
+  MultiViewContainer.Visible := not(MultiViewContainer.Visible);
+  MultiViewSplitter.Visible := MultiViewContainer.Visible;
 end;
 
 procedure TfrmMain.btnSearchClick(Sender: TObject);
@@ -375,7 +386,7 @@ end;
 procedure TfrmMain.WebFormCreate(Sender: TObject);
 begin
   {$IFDEF RELEASE}
-    document.body.insertAdjacentHTML('beforeend','<script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>');
+    //document.body.insertAdjacentHTML('beforeend','<script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>');
 
     lblNavSearch.Caption := 'Home';
     edtSearch.Visible := False;
@@ -420,6 +431,11 @@ begin
   btnNavHalo5.ElementHandle.style.setProperty('border-radius', '5px');
   btnNavHaloInfinite.ElementHandle.style.setProperty('border-radius', '5px');
 
+  btnMultiView.ElementHandle.style.setProperty('border-radius', '5px');
+  btnMultiView.ElementHandle.style.setProperty('border-width', '0');
+  btnMultiView.ElementHandle.innerHTML := '<img src="assets/list.svg" style="display: block; margin-left: auto; margin-right: auto; width: 75%;" />';
+
+
 //  GetAchievements.Execute(
 //    procedure(AResponse: string; AReq: TJSXMLHttpRequest)
 //    var
@@ -430,6 +446,30 @@ begin
 //      console.log(JS);
 //    end
 //  );
+end;
+
+procedure TfrmMain.WebFormResize(Sender: TObject);
+begin
+  btnMultiView.Visible := False;
+  if layBody.Width > 1000 then
+  begin
+    MultiViewContainer.Align := alLeft;
+    MultiViewContainer.Visible := True;
+    MultiViewContainer.Width := 350;
+  end else
+  begin
+    if layBody.Width > 700 then
+    begin
+      MultiViewContainer.Align := alLeft;
+      MultiViewContainer.Visible := True;
+      MultiViewContainer.Width := 300;
+    end else
+    begin
+      MultiViewContainer.Align := alClient;
+      MultiViewContainer.Visible := False;
+      btnMultiView.Visible := True;
+    end;
+  end;
 end;
 
 procedure TfrmMain.WebFormShow(Sender: TObject);
@@ -461,6 +501,11 @@ end;
 procedure TfrmMain.WebPanelMouseLeave(Sender: TObject);
 begin
   TWebPanel(Sender).Color := clNone;
+end;
+
+procedure TfrmMain.MultiViewSplitterMoved(Sender: TObject);
+begin
+  MultiViewWidth := MultiViewContainer.Width;
 end;
 
 end.
