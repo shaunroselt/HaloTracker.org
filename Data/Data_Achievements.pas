@@ -4115,7 +4115,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Co-op Campaign'];
     ),
     (
       name: 'Those Left Behind';
@@ -8982,7 +8982,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Co-op Campaign'];
     ),
     (
       name: 'Hunting Party';
@@ -8992,7 +8992,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Co-op Campaign'];
     ),
     (
       name: 'First Responders';
@@ -9002,7 +9002,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Co-op Campaign'];
     ),
     (
       name: 'Wardens of Zeta';
@@ -9012,7 +9012,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Co-op Campaign'];
     ),
     (
       name: 'Vintage Fisticuffs';
@@ -9032,7 +9032,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Co-op Campaign'];
     ),
     (
       name: 'Turnabout is Fair Play';
@@ -9052,7 +9052,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Co-op Campaign'];
     ),
     (
       name: 'Rapid Unscheduled Disassembly';
@@ -9122,7 +9122,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Co-op Campaign'];
     ),
     (
       name: 'Gruesome Twosome';
@@ -9132,7 +9132,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Co-op Campaign'];
     ),
     (
       name: 'Keep It Steady';
@@ -9172,7 +9172,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Co-op Campaign'];
     ),
     (
       name: 'Controlled Demolition';
@@ -9182,7 +9182,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Co-op Campaign'];
     ),
     (
       name: 'Wolves at the Doors';
@@ -9192,7 +9192,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Co-op Campaign'];
     )
   );
 
