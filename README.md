@@ -7,7 +7,7 @@
 
 Cross-Platform Halo Achievement Tracker App and Website ([HaloTracker.org](https://halotracker.org/))
 
-![Halo Achievement Tracker (HaloTracker.org)](https://github.com/shaunroselt/HaloTracker.org/assets/5418178/92aac562-90bc-4396-8d34-67a7d3f963cb)
+![Halo Achievement Tracker (HaloTracker.org)](https://github.com/shaunroselt/HaloTracker.org/assets/5418178/5d74a68a-3724-49d8-a4bc-834856f12d3d)
 
 _Note: Everything is still in active development with lots of bugs_
 
@@ -43,7 +43,7 @@ _Note: Everything is still in active development with lots of bugs_
 | MacOS      | *Coming soon!*             |
 | iOS / tvOS | *Coming soon!*             |
 | Linux      | *Coming soon!*             |
-| Web        | *Coming soon!*             |
+| Web        | Any Modern Browser         |
 
 ## Release Notes (Change Log)
 [RELEASE_NOTES.md](https://github.com/shaunroselt/HaloTracker.org/blob/master/RELEASE_NOTES.md)
