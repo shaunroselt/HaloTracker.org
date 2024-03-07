@@ -32,12 +32,12 @@ type
     pbAchievementsEarned: TWebProgressBar;
     WebGridPanel1: TWebGridPanel;
     lblAchievementsEarned: TWebLabel;
-    WebLabel6: TWebLabel;
+    lblAchievementProgressPercent: TWebLabel;
     edtCompare: TWebEdit;
     btnCompare: TWebButton;
     edtSearch: TWebEdit;
     btnSearch: TWebButton;
-    WebLabel7: TWebLabel;
+    lblSearch: TWebLabel;
     WebLabel8: TWebLabel;
     cbMultiplayer: TWebCheckBox;
     cbCoopCampaign: TWebCheckBox;
@@ -213,6 +213,7 @@ var
   I, AchievementCounter: UInt64;
   MyHTML, MyFinalHTML: String;
   AchievementsCount: UInt64;
+  AchievementUnlocked: String;
   SelectedGame: String;
   ShowAchievement: Boolean;
 begin
@@ -232,6 +233,7 @@ begin
   if SelectedGame = 'halo5' then
     AchievementsCount := Length(Halo5_Achievements);
 
+  AchievementUnlocked := 'Unlocked Feb 18, 2024, 7:25 PM';
 
   MyFinalHTML := '''
   <style>
@@ -272,7 +274,7 @@ begin
             </div>
         </div>
         <div style="color: rgb(255, 255, 255); outline: none; float: right; font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 11pt; display: table; height: 100px; margin-right: 20px">
-            <label style="vertical-align: middle; display: table-cell; color: rgb(255, 255, 255); font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 11pt; text-overflow: clip; white-space: nowrap;">Unlocked Feb 18, 2024, 7:25 PM</label>
+            <label style="vertical-align: middle; display: table-cell; color: rgb(255, 255, 255); font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 11pt; text-overflow: clip; white-space: nowrap;">${AchievementUnlocked}</label>
         </div>
     </div>
     ''';
@@ -319,10 +321,16 @@ begin
 
     if ShowAchievement then
     begin
+      {$IFDEF RELEASE}
+        AchievementUnlocked := '';
+      {$ENDIF}
       MyFinalHTML := MyFinalHTML + MyHTML.Replace('${AchievementImage}', Achievement.image, [rfReplaceAll])
                                          .Replace('${AchievementName}', Achievement.name, [rfReplaceAll])
                                          .Replace('${AchievementDescription}', Achievement.description, [rfReplaceAll])
-                                         .Replace('${AchievementPercent}', Achievement.percent_achieved, [rfReplaceAll]);
+                                         .Replace('${AchievementPercent}', Achievement.percent_achieved, [rfReplaceAll])
+                                         .Replace('${AchievementUnlocked}', AchievementUnlocked, [rfReplaceAll]);
+
+
       inc(AchievementCounter);
     end;
 
@@ -336,12 +344,26 @@ begin
   lblAchievementsEarned.Caption := '0 of ' + AchievementCounter.ToString + ' ACHIEVEMENTS EARNED';
   layAchievements.ElementHandle.innerHTML := layAchievements.ElementHandle.innerHTML + MyFinalHTML;
 
+  {$IFDEF RELEASE}
+    lblAchievementsEarned.Caption := AchievementCounter.ToString + ' ACHIEVEMENTS';
+    pbAchievementsEarned.Visible := False;
+    lblAchievementProgressPercent.Visible := False;
+  {$ENDIF}
+
 end;
 
 procedure TFrame_Achievements.SetContent;
 var
   SelectedGame: String;
 begin
+  {$IFDEF RELEASE}
+    lblSearch.Visible := False;
+    edtSearch.Visible := False;
+    btnSearch.Visible := False;
+
+    edtCompare.Visible := False;
+    btnCompare.Visible := False;
+  {$ENDIF}
   LoadAchievementsHTML;
 
   SelectedGame := GetQueryParam('game').Trim.ToLower;

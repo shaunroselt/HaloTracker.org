@@ -376,6 +376,10 @@ procedure TfrmMain.WebFormCreate(Sender: TObject);
 begin
   {$IFDEF RELEASE}
     document.body.insertAdjacentHTML('beforeend','<script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>');
+
+    lblNavSearch.Caption := 'Home';
+    edtSearch.Visible := False;
+    btnSearch.Visible := False;
   {$ENDIF}
   document.title := 'Halo Achievement Tracker';
 

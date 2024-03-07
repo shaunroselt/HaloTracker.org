@@ -14,9 +14,9 @@ type
     WebScrollBox1: TWebScrollBox;
     laySearch: TWebPanel;
     imgLoginHeader: TWebImageControl;
-    WebLabel1: TWebLabel;
+    lblDescription: TWebLabel;
     WebLabel2: TWebLabel;
-    btnSearchText: TWebLabel;
+    lblSearch: TWebLabel;
     edtSearch: TWebEdit;
     btnSearch: TWebButton;
     procedure imgLoginHeaderLoaded(Sender: TObject);
@@ -41,12 +41,18 @@ implementation
 
 procedure TFrame_Search.imgLoginHeaderLoaded(Sender: TObject);
 begin
-  laySearch.Height := btnSearchText.Top + btnSearchText.Height + 40;
+  laySearch.Height := lblSearch.Top + lblSearch.Height + 40;
 end;
 
 procedure TFrame_Search.SetContent;
 begin
-  console.log('TFrame_Search.SetContent');
+  {$IFDEF RELEASE}
+    lblSearch.Visible := False;
+    edtSearch.Visible := False;
+    btnSearch.Visible := False;
+
+    lblDescription.Caption := 'Track and access guides for all achievements across all Halo games! The Halo Achievement Tracker allows you to filter achievements by individual game, game mode, and the map on which they can be unlocked.';
+  {$ENDIF}
 end;
 
 procedure TFrame_Search.StylePage;

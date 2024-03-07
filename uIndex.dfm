@@ -109,6 +109,7 @@ object frmMain: TfrmMain
         OnClick = btnSearchClick
         OnMouseEnter = ButtonMouseEnter
         OnMouseLeave = ButtonMouseLeave
+        ExplicitLeft = 1418
       end
       object btnProfile: TWebPanel
         AlignWithMargins = True

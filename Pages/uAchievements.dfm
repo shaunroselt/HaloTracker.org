@@ -60,7 +60,7 @@ object Frame_Achievements: TFrame_Achievements
         BorderStyle = bsNone
         Color = -1
         ShowCaption = False
-        object WebLabel7: TWebLabel
+        object lblSearch: TWebLabel
           AlignWithMargins = True
           Left = 20
           Top = 20
@@ -252,8 +252,6 @@ object Frame_Achievements: TFrame_Achievements
           State = cbChecked
           WidthPercent = 100.000000000000000000
           OnClick = FilterChange
-          ExplicitLeft = 41
-          ExplicitTop = 318
         end
       end
       object layAchievementsGridRight: TWebPanel
@@ -601,7 +599,7 @@ object Frame_Achievements: TFrame_Achievements
           item
             Column = 0
             Row = 0
-            Control = WebLabel6
+            Control = lblAchievementProgressPercent
           end>
         Color = -1
         GridLineColor = clBlack
@@ -631,7 +629,7 @@ object Frame_Achievements: TFrame_Achievements
           ParentFont = False
           WidthPercent = 100.000000000000000000
         end
-        object WebLabel6: TWebLabel
+        object lblAchievementProgressPercent: TWebLabel
           Left = 764
           Top = 2
           Width = 758

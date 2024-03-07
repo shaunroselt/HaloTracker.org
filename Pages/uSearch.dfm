@@ -34,9 +34,9 @@ object Frame_Search: TFrame_Search
         WidthPercent = 100.000000000000000000
         Align = alTop
         OnLoaded = imgLoginHeaderLoaded
-        URL = 'assets/background-mcc.jpg'
+        URL = 'assets/background-infinite.jpg'
       end
-      object WebLabel1: TWebLabel
+      object lblDescription: TWebLabel
         AlignWithMargins = True
         Left = 40
         Top = 154
@@ -91,7 +91,7 @@ object Frame_Search: TFrame_Search
         WidthPercent = 100.000000000000000000
         ExplicitWidth = 481
       end
-      object btnSearchText: TWebLabel
+      object lblSearch: TWebLabel
         AlignWithMargins = True
         Left = 40
         Top = 416
