@@ -11,6 +11,7 @@
 
 ## Release Notes
 * [Version 1.0.0 (07/03/2024)](#version-100-07032024)
+* [Version 1.0.1 (08/03/2024)](#version-101-08032024)
 
 
 ## Version 1.0.0 (07/03/2024)
@@ -22,3 +23,8 @@ This is the first version of the website. The first version is quite basic and b
 - View Achievements for Halo Infinite
 - View Percentage of players that have achieved an achievement
 - Basic Achievement Filtering based on Campaign, Co-op Campaign, Multiplayer, and Other (Not Filtered Yet)
+
+## Version 1.0.1 (08/03/2024)
+![Home Page for Halo Achievement Tracker (HaloTracker.org) - Version 1.0.1 (08/03/2024)](https://github.com/shaunroselt/HaloTracker.org/assets/5418178/91f8fdc9-f9e1-4974-af80-92ace41fe55b)
+- Better Mobile Support
+- Changed "Home" icon in the left menu
