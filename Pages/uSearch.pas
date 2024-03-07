@@ -11,11 +11,11 @@ uses
 
 type
   TFrame_Search = class(TWebFrame)
-    WebScrollBox1: TWebScrollBox;
+    layBody: TWebScrollBox;
     laySearch: TWebPanel;
     imgLoginHeader: TWebImageControl;
     lblDescription: TWebLabel;
-    WebLabel2: TWebLabel;
+    lblTitle: TWebLabel;
     lblSearch: TWebLabel;
     edtSearch: TWebEdit;
     btnSearch: TWebButton;
@@ -41,7 +41,34 @@ implementation
 
 procedure TFrame_Search.imgLoginHeaderLoaded(Sender: TObject);
 begin
+  imgLoginHeader.HeightStyle := ssAuto;
+
   laySearch.Height := lblSearch.Top + lblSearch.Height + 40;
+  {$IFDEF RELEASE}
+    laySearch.Height := lblDescription.Top + lblDescription.Height + 40;
+  {$ENDIF}
+
+//  console.log('lblDescription.Top: ' + lblDescription.Top.ToString);
+//  console.log('lblDescription.Height: ' + lblDescription.Height.ToString);
+
+  if layBody.Height > 800 then
+  begin
+    if laySearch.Height > layBody.Height then
+    begin
+      imgLoginHeader.ElementHandle.style.setProperty('object-fit','cover');
+      imgLoginHeader.HeightStyle := ssAbsolute;
+      imgLoginHeader.Height := layBody.Height - laySearch.Margins.Top - laySearch.Margins.Bottom - 80 -
+                               lblTitle.Height - lblTitle.Margins.Top - lblTitle.Margins.Bottom -
+                               lblDescription.Height - lblDescription.Margins.Top - lblDescription.Margins.Bottom;
+
+      laySearch.Height := lblSearch.Top + lblSearch.Height + 40;
+      {$IFDEF RELEASE}
+        laySearch.Height := lblDescription.Top + lblDescription.Height + 40;
+      {$ENDIF}
+    end;
+  end;
+
+
 end;
 
 procedure TFrame_Search.SetContent;
@@ -80,21 +107,21 @@ begin
 
   if (Self.Width <= 1100) then
   begin
-    laySearch.Width := Self.Width - 80;
+//    laySearch.Width := Self.Width - 80;
     edtSearch.Margins.Left := 80;
     edtSearch.Margins.Right := 80;
     btnSearch.Margins.Left := 80;
     btnSearch.Margins.Right := 80;
   end else
   begin
-    laySearch.Width := 1000;
+//    laySearch.Width := 1000;
     edtSearch.Margins.Left := 250;
     edtSearch.Margins.Right := 250;
     btnSearch.Margins.Left := 250;
     btnSearch.Margins.Right := 250;
   end;
 
-//  laySearch.Height := btnSearchText.Top + btnSearchText.Height + 40;
+  imgLoginHeaderLoaded(nil);
 end;
 
 procedure TFrame_Search.ButtonMouseEnter(Sender: TObject);

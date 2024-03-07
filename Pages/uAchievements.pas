@@ -502,6 +502,26 @@ end;
 procedure TFrame_Achievements.WebFrameResize(Sender: TObject);
 begin
   if (PageCreated = False) then StylePage;
+
+  layAchievementsGrid.ColumnCollection.Clear;
+  layAchievementsGrid.RowCollection.Clear;
+  if layAchievementsContainer.Width > 1000 then
+  begin
+    layAchievementsGrid.ColumnCollection.Add;
+    layAchievementsGrid.ColumnCollection.Items[0].Value := 30;
+    layAchievementsGrid.ColumnCollection.Add;
+    layAchievementsGrid.ColumnCollection.Items[1].SizeStyle := ssAuto;
+    layAchievementsGrid.RowCollection.Add;
+  end else
+  begin
+    layAchievementsGrid.ColumnCollection.Add;
+    layAchievementsGrid.RowCollection.Add;
+    layAchievementsGrid.RowCollection.Items[0].SizeStyle := ssAbsolute;
+    layAchievementsGrid.RowCollection.Items[0].Value := cbOther.Top + cbOther.Height + cbOther.Margins.Bottom;
+    layAchievementsGrid.RowCollection.Add;
+    layAchievementsGrid.RowCollection.Items[1].SizeStyle := ssAuto;
+  end;
+
 end;
 
 end.

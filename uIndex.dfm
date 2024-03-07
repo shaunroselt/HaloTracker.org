@@ -305,7 +305,7 @@ object frmMain: TfrmMain
               Align = alLeft
               ChildOrder = 2
               OnClick = NavItemClick
-              URL = 'assets/search.svg'
+              URL = 'assets/house.svg'
               ExplicitLeft = 46
             end
           end

@@ -200,6 +200,7 @@
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>JpgImage_4</ResourceId>
         </RcItem>
+        <None Include="assets\house.svg"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -535,6 +536,12 @@
                     </Platform>
                 </DeployFile>
                 <DeployFile LocalName="assets\halo5.jpg" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\house.svg" Configuration="Release" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>

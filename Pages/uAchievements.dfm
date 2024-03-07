@@ -32,6 +32,7 @@ object Frame_Achievements: TFrame_Achievements
           Value = 30
         end
         item
+          SizeStyle = ssAuto
           Value = 70
         end>
       ControlCollection = <

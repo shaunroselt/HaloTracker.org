@@ -5,7 +5,7 @@ object Frame_Search: TFrame_Search
   Height = 936
   TabOrder = 0
   OnResize = WebFrameResize
-  object WebScrollBox1: TWebScrollBox
+  object layBody: TWebScrollBox
     Left = 0
     Top = 0
     Width = 1566
@@ -15,19 +15,26 @@ object Frame_Search: TFrame_Search
     ChildOrder = 2
     Color = clWindow
     object laySearch: TWebPanel
-      Left = 283
-      Top = 40
-      Width = 1000
+      AlignWithMargins = True
+      Left = 20
+      Top = 20
+      Width = 1526
       Height = 466
-      Center.Horizontal = True
-      AutoSize = True
+      Margins.Left = 20
+      Margins.Top = 20
+      Margins.Right = 20
+      Margins.Bottom = 20
+      Align = alTop
       BorderColor = clWhite
       ChildOrder = 1
       Color = clBlack
+      ExplicitLeft = 283
+      ExplicitTop = 40
+      ExplicitWidth = 1000
       object imgLoginHeader: TWebImageControl
         Left = 0
         Top = 0
-        Width = 1000
+        Width = 1526
         Height = 57
         HeightStyle = ssAuto
         HeightPercent = 100.000000000000000000
@@ -35,12 +42,13 @@ object Frame_Search: TFrame_Search
         Align = alTop
         OnLoaded = imgLoginHeaderLoaded
         URL = 'assets/background-infinite.jpg'
+        ExplicitWidth = 1000
       end
       object lblDescription: TWebLabel
         AlignWithMargins = True
         Left = 40
         Top = 154
-        Width = 920
+        Width = 1446
         Height = 90
         Margins.Left = 40
         Margins.Top = 20
@@ -66,11 +74,11 @@ object Frame_Search: TFrame_Search
         WidthPercent = 100.000000000000000000
         ExplicitWidth = 918
       end
-      object WebLabel2: TWebLabel
+      object lblTitle: TWebLabel
         AlignWithMargins = True
         Left = 40
         Top = 77
-        Width = 920
+        Width = 1446
         Height = 57
         Margins.Left = 40
         Margins.Top = 20
@@ -95,7 +103,7 @@ object Frame_Search: TFrame_Search
         AlignWithMargins = True
         Left = 40
         Top = 416
-        Width = 920
+        Width = 1446
         Height = 50
         Margins.Left = 40
         Margins.Top = 20
@@ -122,7 +130,7 @@ object Frame_Search: TFrame_Search
         AlignWithMargins = True
         Left = 250
         Top = 284
-        Width = 500
+        Width = 1026
         Height = 46
         Margins.Left = 250
         Margins.Top = 40
@@ -139,12 +147,13 @@ object Frame_Search: TFrame_Search
         ParentFont = False
         TextHint = 'Enter Xbox LIVE Gamertag'
         WidthPercent = 100.000000000000000000
+        ExplicitWidth = 500
       end
       object btnSearch: TWebButton
         AlignWithMargins = True
         Left = 250
         Top = 350
-        Width = 500
+        Width = 1026
         Height = 46
         Cursor = crHandPoint
         Margins.Left = 250
@@ -165,6 +174,7 @@ object Frame_Search: TFrame_Search
         WidthPercent = 100.000000000000000000
         OnMouseEnter = ButtonMouseEnter
         OnMouseLeave = ButtonMouseLeave
+        ExplicitWidth = 500
       end
     end
   end
