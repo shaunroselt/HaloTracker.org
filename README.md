@@ -25,6 +25,7 @@ _Note: Everything is still in active development with lots of bugs_
 - Filtering Achievements by campaign, co-op campaign and multiplayer
 
 ## Planned Features
+- Better Mobile Support
 - Achievement Guides for every Achievement
 - Better Filtering options
 - Add Sorting options
