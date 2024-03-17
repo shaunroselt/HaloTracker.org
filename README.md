@@ -21,10 +21,11 @@ _Note: Everything is still in active development with lots of bugs_
 
 ## Current Features
 - Viewing Achievements for Halo MCC, Halo 5 and Halo Infinite
+- Viewing Achievement Guides
 - Filtering Achievements by campaign, co-op campaign and multiplayer
 
 ## Planned Features
-- Viewing Achievement Guides
+- Achievement Guides for every Achievement
 - Better Filtering options
 - Add Sorting options
 - Searching for players via Xbox to view their achievements
