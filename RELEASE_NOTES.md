@@ -34,3 +34,8 @@ This is the first version of the website. The first version is quite basic and b
 - Better Mobile Support
 - Improved Achievement Filter Criteria
 - Fixed some incorrect Achievement descriptions
+
+## Version 1.0.3 (2024/03/17)
+![Achievement Guide for Halo Achievement Tracker (HaloTracker.org) - Version 1.0.3 (2024/03/17)](https://github.com/shaunroselt/HaloTracker.org/assets/5418178/4a84dd66-94c4-48b5-a784-4498839c50f0)
+- Added Achievement Guide for "I'm Sorry, Dave" and "Sacrifice" in Halo MCC
+- Improved Left Hamburger Menu on Mobile
