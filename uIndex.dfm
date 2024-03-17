@@ -177,7 +177,6 @@ object frmMain: TfrmMain
         Width = 44
         Height = 44
         Cursor = crHandPoint
-        Hint = 'View Change Log'
         Margins.Left = 13
         Margins.Top = 13
         Margins.Right = 0
@@ -192,7 +191,7 @@ object frmMain: TfrmMain
         Font.Style = []
         HeightPercent = 100.000000000000000000
         ParentFont = False
-        ShowHint = True
+        ShowHint = False
         WidthPercent = 100.000000000000000000
         OnClick = btnMultiViewClick
         OnMouseEnter = ButtonMouseEnter

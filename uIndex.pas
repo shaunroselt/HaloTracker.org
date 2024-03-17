@@ -433,7 +433,6 @@ begin
 
   btnMultiView.ElementHandle.style.setProperty('border-radius', '5px');
   btnMultiView.ElementHandle.style.setProperty('border-width', '0');
-  btnMultiView.ElementHandle.innerHTML := '<img src="assets/list.svg" style="display: block; margin-left: auto; margin-right: auto; width: 75%;" />';
 
 
 //  GetAchievements.Execute(
@@ -470,6 +469,8 @@ begin
       btnMultiView.Visible := True;
     end;
   end;
+
+  btnMultiView.ElementHandle.innerHTML := '<img src="assets/list.svg" style="display: block; margin-left: auto; margin-right: auto; width: 75%;" />';
 end;
 
 procedure TfrmMain.WebFormShow(Sender: TObject);
