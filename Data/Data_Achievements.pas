@@ -43,8 +43,18 @@ const
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/fe21255dc623761447e3caf84522b1fb95212ca0.jpg';
       percent_achieved: '75.8%';
       Gamerscore: -1;
-      Guide_Description: '';
-      Guide_Video: [];
+      Guide_Description: '''
+      To unlock the "I’m Sorry, Dave" achievement in Halo: Reach within the Halo: The Master Chief Collection (MCC), you need to locate a specific easter egg that pays homage to David Candland, the game’s UI director. Here’s a detailed guide on how to find it:
+
+      1. Start any campaign mission or multiplayer map in Halo: Reach.
+      2. Pick up a weapon that **does not** have a zooming scope feature. Common examples include the Assault Rifle or the Plasma Pistol.
+      3. Press the zoom button (usually the right stick on consoles or the designated key on PC) to ’zoom in’ with your unscoped weapon.
+      4. Look closely at the **bottom left corner** of your screen. You will notice a string of binary code appearing briefly.
+      5. This binary code translates to the word "Dave" in ASCII binary representation.
+
+      By following these steps and observing the binary code, you will unlock the "I’m Sorry, Dave" achievement.
+      ''';
+      Guide_Video: ['https://www.youtube.com/embed/ROoEebxqwJM?si=hdYc8YVHFQ-OTlsN'];
       Filter: ['Other'];
     ),
     (
@@ -553,8 +563,14 @@ const
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/4248f566c77bd3b0711df0d655ae7f403d36078c.jpg';
       percent_achieved: '25.5%';
       Gamerscore: -1;
-      Guide_Description: '';
-      Guide_Video: [];
+      Guide_Description: '''
+      As you progress through the level, you’ll reach a point where Cortana remarks, “This cave is not a natural formation.” You will be driving your Warthog through a network of tunnels. Pay close attention as you navigate this area. You’re looking for a small side path that diverges from the main route.
+
+      This path is somewhat concealed, so it’s easy to miss if you’re speeding through. Slow down and keep an eye out for a narrow opening on the right side of the cave. It’s located just after a large, illuminated structure that stands out in the environment. Once you spot the alley, drive into it and dismount from your Warthog.
+
+      The terminal is tucked away here, waiting to be activated. Approach it and interact to unlock the achievement.
+      ''';
+      Guide_Video: ['https://www.youtube.com/embed/QGV5LD__nqI?si=lP_br6GggHIJl3s8&amp;start=27'];
       Filter: ['Other'];
     ),
     (

@@ -46,8 +46,8 @@ object Frame_Achievements: TFrame_Achievements
           Row = 0
           Control = layAchievementsGridRight
         end>
-      Color = clNone
-      GridLineColor = clBlack
+      Color = -1
+      GridLineColor = -1
       RowCollection = <
         item
           Value = 100
@@ -653,6 +653,201 @@ object Frame_Achievements: TFrame_Achievements
           ParentFont = False
           WidthPercent = 100.000000000000000000
         end
+      end
+    end
+    object layAchievementGuide: TWebScrollBox
+      Left = 0
+      Top = 178
+      Width = 1570
+      Height = 841
+      Align = alClient
+      BorderStyle = bsNone
+      ChildOrder = 3
+      Color = -1
+      ScrollBars = ssVertical
+      Visible = False
+      object lblAchievementGuideDescription: TWebLabel
+        AlignWithMargins = True
+        Left = 20
+        Top = 74
+        Width = 1530
+        Height = 25
+        Margins.Left = 20
+        Margins.Top = 10
+        Margins.Right = 20
+        Margins.Bottom = 0
+        Align = alTop
+        Caption = '<Achievement Description>'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        HeightPercent = 100.000000000000000000
+        Layout = tlCenter
+        ParentFont = False
+        WordWrap = True
+        WidthPercent = 100.000000000000000000
+        ExplicitWidth = 236
+      end
+      object WebPanel1: TWebPanel
+        Left = 0
+        Top = 0
+        Width = 1570
+        Height = 64
+        Align = alTop
+        BorderStyle = bsNone
+        Color = -1
+        object WebLabel1: TWebLabel
+          AlignWithMargins = True
+          Left = 199
+          Top = 5
+          Width = 13
+          Height = 54
+          Margins.Left = 15
+          Margins.Top = 5
+          Margins.Right = 0
+          Margins.Bottom = 5
+          Align = alLeft
+          Caption = '>'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -19
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          HeightPercent = 100.000000000000000000
+          Layout = tlCenter
+          ParentFont = False
+          WidthPercent = 100.000000000000000000
+          ExplicitHeight = 25
+        end
+        object btnAchievementGuideAll: TWebPanel
+          AlignWithMargins = True
+          Left = 20
+          Top = 16
+          Width = 164
+          Height = 32
+          Cursor = crHandPoint
+          Margins.Left = 20
+          Margins.Top = 16
+          Margins.Right = 0
+          Margins.Bottom = 16
+          Align = alLeft
+          BorderStyle = bsNone
+          ChildOrder = 3
+          Color = -1
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -21
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          ShowCaption = False
+          OnClick = btnAchievementGuideAllClick
+          OnMouseEnter = LinkMouseEnter
+          OnMouseLeave = LinkMouseLeave
+          object lblAchievementGuideAll: TWebLabel
+            AlignWithMargins = True
+            Left = 10
+            Top = 0
+            Width = 144
+            Height = 32
+            Cursor = crHandPoint
+            Margins.Left = 10
+            Margins.Top = 0
+            Margins.Right = 10
+            Margins.Bottom = 0
+            Align = alLeft
+            Caption = 'All Achievements'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -19
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            HeightPercent = 100.000000000000000000
+            Layout = tlCenter
+            ParentFont = False
+            WidthPercent = 100.000000000000000000
+            OnClick = btnAchievementGuideAllClick
+            OnMouseLeave = LinkMouseLeave
+            ExplicitHeight = 25
+          end
+        end
+        object btnAchievementGuideName: TWebPanel
+          AlignWithMargins = True
+          Left = 227
+          Top = 16
+          Width = 262
+          Height = 32
+          Margins.Left = 15
+          Margins.Top = 16
+          Margins.Right = 0
+          Margins.Bottom = 16
+          Align = alLeft
+          BorderStyle = bsNone
+          ChildOrder = 3
+          Color = -1
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -21
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          ShowCaption = False
+          object lblAchievementGuideName: TWebLabel
+            AlignWithMargins = True
+            Left = 48
+            Top = 0
+            Width = 190
+            Height = 32
+            Margins.Left = 10
+            Margins.Top = 0
+            Margins.Right = 10
+            Margins.Bottom = 0
+            Align = alLeft
+            Caption = '<Achievement Name>'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -19
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            HeightPercent = 100.000000000000000000
+            Layout = tlCenter
+            ParentFont = False
+            WidthStyle = ssAuto
+            WidthPercent = 100.000000000000000000
+            ExplicitLeft = 10
+            ExplicitHeight = 25
+          end
+          object imgAchievementImage: TWebImageControl
+            AlignWithMargins = True
+            Left = 3
+            Top = 0
+            Width = 32
+            Height = 32
+            Margins.Top = 0
+            Margins.Bottom = 0
+            HeightPercent = 100.000000000000000000
+            WidthPercent = 100.000000000000000000
+            Align = alLeft
+            ChildOrder = 2
+            URL = 'assets/bug.svg'
+          end
+        end
+      end
+      object AchievementGuideVideo: TWebHTMLContainer
+        AlignWithMargins = True
+        Left = 20
+        Top = 119
+        Width = 1530
+        Height = 702
+        Margins.Left = 20
+        Margins.Top = 20
+        Margins.Right = 20
+        Margins.Bottom = 20
+        Align = alClient
+        ChildOrder = 2
+        ScrollStyle = ssNone
       end
     end
   end

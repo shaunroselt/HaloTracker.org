@@ -386,7 +386,7 @@ end;
 procedure TfrmMain.WebFormCreate(Sender: TObject);
 begin
   {$IFDEF RELEASE}
-    //document.body.insertAdjacentHTML('beforeend','<script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>');
+    document.body.insertAdjacentHTML('beforeend','<script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>');
 
     lblNavSearch.Caption := 'Home';
     edtSearch.Visible := False;
@@ -458,7 +458,7 @@ begin
     MultiViewContainer.Width := 350;
   end else
   begin
-    if layBody.Width > 700 then
+    if layBody.Width > 675 then
     begin
       MultiViewContainer.Align := alLeft;
       MultiViewContainer.Visible := True;
@@ -495,7 +495,6 @@ begin
 //
 //  if (PageFound = False) then
 //    SelectFrame('lay404PageNotFound');
-
 end;
 
 procedure TfrmMain.WebPanelMouseLeave(Sender: TObject);

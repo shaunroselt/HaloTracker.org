@@ -59,7 +59,6 @@ object frmMain: TfrmMain
         ParentFont = False
         WordWrap = True
         WidthPercent = 100.000000000000000000
-        ExplicitLeft = 20
         ExplicitWidth = 323
         ExplicitHeight = 38
       end
@@ -111,7 +110,6 @@ object frmMain: TfrmMain
         OnClick = btnSearchClick
         OnMouseEnter = ButtonMouseEnter
         OnMouseLeave = ButtonMouseLeave
-        ExplicitLeft = 1418
       end
       object btnProfile: TWebPanel
         AlignWithMargins = True
@@ -254,6 +252,7 @@ object frmMain: TfrmMain
         BorderStyle = bsNone
         ChildOrder = 4
         Color = clWindow
+        ScrollBars = ssVertical
         object layNavSearch: TWebPanel
           AlignWithMargins = True
           Left = 0

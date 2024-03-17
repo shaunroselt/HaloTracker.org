@@ -6,6 +6,7 @@ uses
   System.SysUtils, System.Classes, JS, Web, WEBLib.Graphics, WEBLib.Controls,
   WEBLib.Forms, WEBLib.Dialogs, WEBLib.ExtCtrls, Vcl.StdCtrls, WEBLib.StdCtrls,
   Vcl.Controls, WEBLib.ComCtrls, WEBLib.REST, WEBLib.WebTools,  System.StrUtils,
+  WEBLib.WebCtrls,
 
   Data_HTML_Achievements,
   Data_Achievements,
@@ -46,12 +47,25 @@ type
     layAchievementsGridRight: TWebPanel;
     GetAchievementsHaloInfinite: TWebHttpRequest;
     cbOther: TWebCheckBox;
+    layAchievementGuide: TWebScrollBox;
+    WebPanel1: TWebPanel;
+    WebLabel1: TWebLabel;
+    lblAchievementGuideDescription: TWebLabel;
+    AchievementGuideVideo: TWebHTMLContainer;
+    btnAchievementGuideAll: TWebPanel;
+    lblAchievementGuideAll: TWebLabel;
+    btnAchievementGuideName: TWebPanel;
+    lblAchievementGuideName: TWebLabel;
+    imgAchievementImage: TWebImageControl;
     procedure WebFrameResize(Sender: TObject);
     procedure WebButton1Click(Sender: TObject);
     procedure ButtonMouseEnter(Sender: TObject);
     procedure ButtonMouseLeave(Sender: TObject);
     procedure btnSearchClick(Sender: TObject);
     procedure FilterChange(Sender: TObject);
+    procedure btnAchievementGuideAllClick(Sender: TObject);
+    procedure LinkMouseEnter(Sender: TObject);
+    procedure LinkMouseLeave(Sender: TObject);
   private
     { Private declarations }
     PageCreated: Boolean;
@@ -61,6 +75,7 @@ type
     procedure SetContent();
     procedure LoadAchievements(); // This is slow as fuck!
     procedure LoadAchievementsHTML();
+    procedure LoadAchievementGuide(Sender: TJSEvent);
   end;
 
 var
@@ -71,6 +86,23 @@ implementation
 {$R *.dfm}
 
 { TFrame_Achievements }
+
+procedure TFrame_Achievements.LinkMouseEnter(Sender: TObject);
+begin
+  TWebPanel(Sender).Color := clHighlight;
+end;
+
+procedure TFrame_Achievements.LinkMouseLeave(Sender: TObject);
+begin
+  TWebPanel(Sender).Color := clNone;
+end;
+
+procedure TFrame_Achievements.btnAchievementGuideAllClick(Sender: TObject);
+begin
+  layAchievementGuide.Visible := False;
+  layAchievementsGrid.Visible := True;
+  TJSHTMLElement(layAchievementsGrid.GetElementHandle.getElementsByTagName('table').Items[0]).style.setProperty('background-color','transparent');
+end;
 
 procedure TFrame_Achievements.btnSearchClick(Sender: TObject);
 begin
@@ -90,6 +122,43 @@ end;
 procedure TFrame_Achievements.FilterChange(Sender: TObject);
 begin
   LoadAchievementsHTML();
+end;
+
+procedure TFrame_Achievements.LoadAchievementGuide(Sender: TJSEvent);
+var
+  SelectedGame: String;
+  Achievement: TAchievement;
+  AchievementID: UInt64;
+begin
+  if Sender.targetElement.getAttribute('style').ToLower.Contains('cursor:pointer;') then
+  begin
+    layAchievementGuide.Visible := True;
+    layAchievementsGrid.Visible := False;
+
+    AchievementID := Sender.targetElement.getAttribute('data-id').ToInteger;
+
+    SelectedGame := GetQueryParam('game').Trim.ToLower;
+
+    if (SelectedGame = 'halomcc') or (SelectedGame = 'haloreach') or (SelectedGame = 'haloce') or (SelectedGame = 'halo2') or
+       (SelectedGame = 'halo3') or (SelectedGame = 'halo3odst') or (SelectedGame = 'halo4') then
+      Achievement := HaloMCC_Achievements[AchievementID];
+    if SelectedGame = 'haloinfinite' then
+      Achievement := HaloInfinite_Achievements[AchievementID];
+    if SelectedGame = 'halo5' then
+      Achievement := Halo5_Achievements[AchievementID];
+
+    imgAchievementImage.URL := Achievement.image;
+    lblAchievementGuideName.Caption := Achievement.name;
+    btnAchievementGuideName.Width := imgAchievementImage.Width + imgAchievementImage.Margins.Left + imgAchievementImage.Margins.Right +
+                                     lblAchievementGuideName.Width + lblAchievementGuideName.Margins.Left + lblAchievementGuideName.Margins.Right;
+
+    lblAchievementGuideDescription.Caption := Achievement.Guide_Description;
+    asm
+      window.dispatchEvent(new Event('resize'));
+    end;
+
+    AchievementGuideVideo.HTML.Text := '<iframe width="100%" height="100%" src="'+Achievement.Guide_Video[0]+'" title="YouTube video player" style="border: 1px solid white; border-radius: 5px;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+  end;
 end;
 
 procedure TFrame_Achievements.LoadAchievements;
@@ -216,6 +285,9 @@ var
   AchievementUnlocked: String;
   SelectedGame: String;
   ShowAchievement: Boolean;
+  CursorHand: String;
+
+  ElementGuideClick: TJSHTMLCollection;
 begin
   layAchievement0.Visible := False;
   console.log('LoadAchievements');
@@ -260,9 +332,9 @@ begin
   begin
     ShowAchievement := True;
     MyHTML := '''
-    <div  style="position: relative;background-color: rgb(25, 29, 36); height: 100px; border-style: solid; border-width: 1px; border-color: rgb(255, 255, 255); margin: 10px 40px;  padding: 0px; border-radius: 5px;">
-        <img ${AchievementComplete} src="${AchievementImage}" alt="Halo Achievement - ${AchievementName} (${AchievementDescription})" style="top: 13px; left: 13px; width: 74px; height: 74px; position: absolute; border: 2px solid transparent; border-image: linear-gradient(to right, transparent, transparent); border-image-slice: 1;">
-        <div style="top: 12px; left: 100px; width: 100%; height: 75px; position: absolute;">
+    <div class="ElementGuideClick" data-id="${AchievementID}" style="${CursorHand}position: relative;background-color: rgb(25, 29, 36); height: 100px; border-style: solid; border-width: 1px; border-color: rgb(255, 255, 255); margin: 10px 40px;  padding: 0px; border-radius: 5px;">
+        <img ${AchievementComplete} src="${AchievementImage}" alt="Halo Achievement - ${AchievementName} (${AchievementDescription})" style="pointer-events: none;top: 13px; left: 13px; width: 74px; height: 74px; position: absolute; border: 2px solid transparent; border-image: linear-gradient(to right, transparent, transparent); border-image-slice: 1;">
+        <div style="pointer-events: none;top: 12px; left: 100px; width: 100%; height: 75px; position: absolute;">
             <div style="color: rgb(255, 255, 255); outline: none; top: 4px; left: 0px; position: absolute; font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 14pt; overflow: hidden; width: 726px; height: 25px;">
                 <label style="vertical-align: top; display: table-cell; color: rgb(255, 255, 255); font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 14pt; text-overflow: clip; white-space: nowrap;">${AchievementName}</label>
             </div>
@@ -273,7 +345,7 @@ begin
                 <label style="vertical-align: top; display: table-cell; color: rgb(255, 255, 255); font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 11pt; text-overflow: clip; white-space: nowrap;">${AchievementPercent} of players have this achievement</label>
             </div>
         </div>
-        <div style="color: rgb(255, 255, 255); outline: none; float: right; font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 11pt; display: table; height: 100px; margin-right: 20px">
+        <div style="pointer-events: none;color: rgb(255, 255, 255); outline: none; float: right; font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 11pt; display: table; height: 100px; margin-right: 20px">
             <label style="vertical-align: middle; display: table-cell; color: rgb(255, 255, 255); font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 11pt; text-overflow: clip; white-space: nowrap;">${AchievementUnlocked}</label>
         </div>
     </div>
@@ -324,18 +396,28 @@ begin
       {$IFDEF RELEASE}
         AchievementUnlocked := '';
       {$ENDIF}
+
+      CursorHand := '';
+      if (Achievement.Guide_Description.Trim <> '') OR (Length(Achievement.Guide_Video) > 0) then
+        CursorHand := 'cursor:pointer;';
+
       MyFinalHTML := MyFinalHTML + MyHTML.Replace('${AchievementImage}', Achievement.image, [rfReplaceAll])
                                          .Replace('${AchievementName}', Achievement.name, [rfReplaceAll])
                                          .Replace('${AchievementDescription}', Achievement.description, [rfReplaceAll])
                                          .Replace('${AchievementPercent}', Achievement.percent_achieved, [rfReplaceAll])
-                                         .Replace('${AchievementUnlocked}', AchievementUnlocked, [rfReplaceAll]);
+                                         .Replace('${AchievementUnlocked}', AchievementUnlocked, [rfReplaceAll])
+                                         .Replace('${AchievementID}', I.ToString, [rfReplaceAll])
+                                         .Replace('${CursorHand}', CursorHand, [rfReplaceAll]);
 
 
       inc(AchievementCounter);
     end;
 
+
     if (1=0) then
-      MyFinalHTML := MyFinalHTML.Replace('${AchievementComplete}', 'class="AchievementCompleteAnimation"', [rfReplaceAll]);
+      MyFinalHTML := MyFinalHTML.Replace('${AchievementComplete}', 'class="AchievementCompleteAnimation"', [rfReplaceAll])
+    else
+      MyFinalHTML := MyFinalHTML.Replace('${AchievementComplete}', '', [rfReplaceAll]);
 
 
 //    console.log(I.ToString + ' has been created');
@@ -350,12 +432,20 @@ begin
     lblAchievementProgressPercent.Visible := False;
   {$ENDIF}
 
+  ElementGuideClick := document.getElementsByClassName('ElementGuideClick');
+  for I := 0 to ElementGuideClick.length-1 do
+  begin
+//    console.log(ElementGuideClick.Items[I]);
+    // Access each element using "TestingClass.Items[I]"
+    ElementGuideClick.Items[I].addEventListener('click', @LoadAchievementGuide);
+  end;
 end;
 
 procedure TFrame_Achievements.SetContent;
 var
   SelectedGame: String;
 begin
+  btnAchievementGuideAllClick(nil);
   {$IFDEF RELEASE}
     lblSearch.Visible := False;
     edtSearch.Visible := False;
@@ -436,6 +526,9 @@ begin
   btnCompare.ElementHandle.style.setProperty('border-radius', '5px');
   btnCompare.ElementHandle.style.setProperty('border-width', '0');
 
+
+  btnAchievementGuideAll.ElementHandle.style.setProperty('border-radius', '5px');
+  btnAchievementGuideName.ElementHandle.style.setProperty('border-radius', '5px');
 end;
 
 procedure TFrame_Achievements.WebButton1Click(Sender: TObject);
