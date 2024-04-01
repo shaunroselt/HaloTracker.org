@@ -44,5 +44,5 @@ This is the first version of the website. The first version is quite basic and b
 
 ## Version 1.0.4 (2024/04/02)
 - Added Achievement Guide for "No Picnic" in Halo MCC
-- Left Hamburger Menu will now have the correct item selected on the first page load
+- The Left Hamburger Menu will now have the correct item selected on the first-page load
 - Optimized Achievements Loading
