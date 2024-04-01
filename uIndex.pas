@@ -86,6 +86,15 @@ type
     WebImageControl1: TWebImageControl;
     lblProfile: TWebLabel;
     btnMultiView: TWebButton;
+    layProfileDropDown: TWebPanel;
+    layNavSignOut: TWebPanel;
+    btnNavSignOut: TWebPanel;
+    lblNavSignOut: TWebLabel;
+    imgNavSignOut: TWebImageControl;
+    layNavProfile: TWebPanel;
+    btnNavProfile: TWebPanel;
+    lblNavProfile: TWebLabel;
+    imgNavProfile: TWebImageControl;
     procedure WebFormCreate(Sender: TObject);
     procedure ButtonMouseEnter(Sender: TObject);
     procedure ButtonMouseLeave(Sender: TObject);
@@ -100,6 +109,9 @@ type
     procedure btnMultiViewClick(Sender: TObject);
     procedure MultiViewSplitterMoved(Sender: TObject);
     procedure WebFormResize(Sender: TObject);
+    procedure OpenProfileDropDown(Sender: TObject);
+    procedure layProfileDropDownMouseLeave(Sender: TObject);
+    procedure btnNavSignOutClick(Sender: TObject);
   private
     { Private declarations }
     MultiViewWidth: UInt64;
@@ -147,6 +159,16 @@ begin
   MultiViewSplitter.Visible := MultiViewContainer.Visible;
 end;
 
+procedure TfrmMain.btnNavSignOutClick(Sender: TObject);
+begin
+  btnProfile.Visible := False;
+  edtSearch.Visible := True;
+  btnSearch.Visible := True;
+
+  DeleteCookie('user');
+  RemoveQueryParam('user');
+end;
+
 procedure TfrmMain.btnSearchClick(Sender: TObject);
 begin
   btnProfile.Visible := True;
@@ -157,6 +179,8 @@ begin
   btnProfile.Width := lblProfile.Left + lblProfile.Width + lblProfile.Margins.Right;
   SetCookie('user', edtSearch.Text, Int64.MaxValue);
   SetQueryParam('user', edtSearch.Text);
+
+  edtSearch.Text := '';
 end;
 
 procedure TfrmMain.ButtonMouseEnter(Sender: TObject);
@@ -195,24 +219,41 @@ begin
   if (PageQueryString = '') OR (PageQueryString = 'search') then
   begin
     PageFound := True;
+    SetQueryParam('page','search');
     SelectFrame('laySearch');
+    NavMouseLeave(btnNavSearch);
   end;
 
   if (PageQueryString = 'achievements') then
   begin
     PageFound := True;
     SelectFrame('layAchievements');
+    NavMouseLeave(btnNavHaloMCC);
+    NavMouseLeave(btnNavHaloReach);
+    NavMouseLeave(btnNavHaloCE);
+    NavMouseLeave(btnNavHalo2);
+    NavMouseLeave(btnNavHalo3);
+    NavMouseLeave(btnNavHalo3ODST);
+    NavMouseLeave(btnNavHalo4);
+    NavMouseLeave(btnNavHalo5);
+    NavMouseLeave(btnNavHaloInfinite);
   end;
 
   if (PageQueryString = 'settings') then
   begin
     PageFound := True;
     SelectFrame('laySettings');
+    NavMouseLeave(btnNavSettings);
   end;
 
   if (PageFound = False) then
     SelectFrame('lay404PageNotFound');
 
+end;
+
+procedure TfrmMain.layProfileDropDownMouseLeave(Sender: TObject);
+begin
+  TWebPanel(Sender).Visible := False;
 end;
 
 procedure TfrmMain.SelectFrame(FrameLayoutName: String);
@@ -383,6 +424,11 @@ begin
     TWebPanel(Sender).Color := NavLeaveColor;
 end;
 
+procedure TfrmMain.OpenProfileDropDown(Sender: TObject);
+begin
+  layProfileDropDown.Visible := True;
+end;
+
 procedure TfrmMain.WebFormCreate(Sender: TObject);
 begin
   {$IFDEF RELEASE}
@@ -416,6 +462,12 @@ begin
 
   btnNavSettings.ElementHandle.style.setProperty('border-radius', '5px');
   imgNavSettings.ElementHandle.style.setProperty('object-fit', 'none');
+
+  btnNavProfile.ElementHandle.style.setProperty('border-radius', '5px');
+  imgNavProfile.ElementHandle.style.setProperty('object-fit', 'none');
+
+  btnNavSignOut.ElementHandle.style.setProperty('border-radius', '5px');
+  imgNavSignOut.ElementHandle.style.setProperty('object-fit', 'none');
 
   btnNavExpandCollapseAchievements.ElementHandle.style.setProperty('border-radius', '5px');
   imgNavExpandCollapseAchievements.ElementHandle.style.setProperty('object-fit', 'none');

@@ -101,12 +101,39 @@ procedure TFrame_Achievements.btnAchievementGuideAllClick(Sender: TObject);
 begin
   layAchievementGuide.Visible := False;
   layAchievementsGrid.Visible := True;
-  TJSHTMLElement(layAchievementsGrid.GetElementHandle.getElementsByTagName('table').Items[0]).style.setProperty('background-color','transparent');
+  TJSHTMLElement(layAchievementsGrid.ElementHandle.getElementsByTagName('table').Items[0]).style.setProperty('background-color','transparent');
 end;
 
 procedure TFrame_Achievements.btnSearchClick(Sender: TObject);
 begin
-  LoadAchievementsHTML();
+//  GetAchievementsHaloInfinite.Headers.Clear;
+//  GetAchievementsHaloInfinite.Headers.AddPair('Content-Type','application/json');
+//
+//  GetAchievementsHaloInfinite.Execute(
+//    procedure(AResponse: string; AReq: TJSXMLHttpRequest)
+//    begin
+//      console.log('GetAchievementsHaloInfinite');
+//      console.log(AResponse);
+//    end
+//  );
+
+  asm
+fetch('https://shaunroselt.com/api.php')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.text();
+    })
+    .then(data => {
+        console.log('Received data:', data);
+        // Process the data as needed
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
+    });
+
+  end;
 end;
 
 procedure TFrame_Achievements.ButtonMouseEnter(Sender: TObject);
@@ -333,21 +360,15 @@ begin
     ShowAchievement := True;
     MyHTML := '''
     <div class="ElementGuideClick" data-id="${AchievementID}" style="${CursorHand}position: relative;background-color: rgb(25, 29, 36); height: 100px; border-style: solid; border-width: 1px; border-color: rgb(255, 255, 255); margin: 10px 40px;  padding: 0px; border-radius: 5px;">
-        <img ${AchievementComplete} src="${AchievementImage}" alt="Halo Achievement - ${AchievementName} (${AchievementDescription})" style="pointer-events: none;top: 13px; left: 13px; width: 74px; height: 74px; position: absolute; border: 2px solid transparent; border-image: linear-gradient(to right, transparent, transparent); border-image-slice: 1;">
-        <div style="pointer-events: none;top: 12px; left: 100px; width: 100%; height: 75px; position: absolute;">
-            <div style="color: rgb(255, 255, 255); outline: none; top: 4px; left: 0px; position: absolute; font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 14pt; overflow: hidden; width: 726px; height: 25px;">
-                <label style="vertical-align: top; display: table-cell; color: rgb(255, 255, 255); font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 14pt; text-overflow: clip; white-space: nowrap;">${AchievementName}</label>
-            </div>
-            <div style="color: rgb(255, 255, 255); outline: none; top: 29px; left: 0px; position: absolute; font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 11pt; overflow: hidden; display: table; width: 726px; height: 21px;">
-                <label style="vertical-align: middle; display: table-cell; color: rgb(255, 255, 255); font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 11pt; text-overflow: clip; white-space: nowrap;">${AchievementDescription}</label>
-            </div>
-            <div style="color: rgb(255, 255, 255); outline: none; top: 49px; left: 0px; position: absolute; font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 11pt; overflow: hidden; width: 725px; height: 19px;">
-                <label style="vertical-align: top; display: table-cell; color: rgb(255, 255, 255); font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 11pt; text-overflow: clip; white-space: nowrap;">${AchievementPercent} of players have this achievement</label>
-            </div>
+      <img ${AchievementComplete} src="${AchievementImage}" alt="Halo Achievement - ${AchievementName} (${AchievementDescription})" style="pointer-events: none;top: 13px; left: 13px; width: 74px; height: 74px; position: absolute; border: 2px solid transparent; border-image: linear-gradient(to right, transparent, transparent); border-image-slice: 1;">
+      <div style="min-height: 100%;position: relative;display: flex;align-items: center;margin-left: 100px;color: rgb(255, 255, 255);font-family: &quot;Segoe UI&quot;;Segoe UI&amp;quot;font-style: normal;">
+        <div style="padding-right: 10px;flex-grow: 1;">
+          <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;font-size: 14pt;margin: 0;">${AchievementName}</h3>
+          <h4 style="font-weight: normal;white-space: normal;font-size: 11pt;margin: 0;">${AchievementDescription}</h4>
+          <h5 style="font-weight: normal;white-space: normal;font-size: 11pt;margin: 0;">${AchievementPercent} of players have this achievement</h5>
         </div>
-        <div style="pointer-events: none;color: rgb(255, 255, 255); outline: none; float: right; font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 11pt; display: table; height: 100px; margin-right: 20px">
-            <label style="vertical-align: middle; display: table-cell; color: rgb(255, 255, 255); font-family: &quot;Segoe UI&quot;; font-style: normal; font-size: 11pt; text-overflow: clip; white-space: nowrap;">${AchievementUnlocked}</label>
-        </div>
+        <div style="font-size: 11pt;">${AchievementUnlocked}</div>
+      </div>
     </div>
     ''';
 

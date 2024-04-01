@@ -1,4 +1,4 @@
-unit Data_Achievements;
+Ôªøunit Data_Achievements;
 
 
 interface
@@ -44,15 +44,15 @@ const
       percent_achieved: '75.8%';
       Gamerscore: -1;
       Guide_Description: '''
-      To unlock the "Iím Sorry, Dave" achievement in Halo: Reach within the Halo: The Master Chief Collection (MCC), you need to locate a specific easter egg that pays homage to David Candland, the gameís UI director. Hereís a detailed guide on how to find it:
+      To unlock the "I‚Äôm Sorry, Dave" achievement in Halo: Reach within the Halo: The Master Chief Collection (MCC), you need to locate a specific easter egg that pays homage to David Candland, the game‚Äôs UI director. Here‚Äôs a detailed guide on how to find it:
 
       1. Start any campaign mission or multiplayer map in Halo: Reach.
       2. Pick up a weapon that **does not** have a zooming scope feature. Common examples include the Assault Rifle or the Plasma Pistol.
-      3. Press the zoom button (usually the right stick on consoles or the designated key on PC) to ízoom iní with your unscoped weapon.
+      3. Press the zoom button (usually the right stick on consoles or the designated key on PC) to ‚Äôzoom in‚Äô with your unscoped weapon.
       4. Look closely at the **bottom left corner** of your screen. You will notice a string of binary code appearing briefly.
       5. This binary code translates to the word "Dave" in ASCII binary representation.
 
-      By following these steps and observing the binary code, you will unlock the "Iím Sorry, Dave" achievement.
+      By following these steps and observing the binary code, you will unlock the "I‚Äôm Sorry, Dave" achievement.
       ''';
       Guide_Video: ['https://www.youtube.com/embed/ROoEebxqwJM?si=hdYc8YVHFQ-OTlsN'];
       Filter: ['Other'];
@@ -564,9 +564,9 @@ const
       percent_achieved: '25.5%';
       Gamerscore: -1;
       Guide_Description: '''
-      As you progress through the level, youíll reach a point where Cortana remarks, ìThis cave is not a natural formation.î You will be driving your Warthog through a network of tunnels. Pay close attention as you navigate this area. Youíre looking for a small side path that diverges from the main route.
+      As you progress through the level, you‚Äôll reach a point where Cortana remarks, ‚ÄúThis cave is not a natural formation.‚Äù You will be driving your Warthog through a network of tunnels. Pay close attention as you navigate this area. You‚Äôre looking for a small side path that diverges from the main route.
 
-      This path is somewhat concealed, so itís easy to miss if youíre speeding through. Slow down and keep an eye out for a narrow opening on the right side of the cave. Itís located just after a large, illuminated structure that stands out in the environment. Once you spot the alley, drive into it and dismount from your Warthog.
+      This path is somewhat concealed, so it‚Äôs easy to miss if you‚Äôre speeding through. Slow down and keep an eye out for a narrow opening on the right side of the cave. It‚Äôs located just after a large, illuminated structure that stands out in the environment. Once you spot the alley, drive into it and dismount from your Warthog.
 
       The terminal is tucked away here, waiting to be activated. Approach it and interact to unlock the achievement.
       ''';
@@ -1544,7 +1544,7 @@ const
       Filter: ['Campaign'];
     ),
     (
-      name: 'Folks Need HeroesÖ';
+      name: 'Folks Need Heroes‚Ä¶';
       description: 'Halo: Reach: Complete every level of the game on Heroic difficulty.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/bd51c6bc1518a2b89460bfaf858e5a965e629817.jpg';
       percent_achieved: '12.2%';
@@ -2009,8 +2009,18 @@ const
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/21756595a8b487c2ab2d43de8da8f513a5342374.jpg';
       percent_achieved: '8.7%';
       Gamerscore: -1;
-      Guide_Description: '';
-      Guide_Video: [];
+      Guide_Description: '''
+      To unlock the "No Picnic" achievement in Halo: Reach within the Halo: The Master Chief Collection (MCC), follow these steps:
+
+      1. Start the Exodus mission.
+      2. As you begin the mission, sprint down the ramp toward your primary objective.
+      3. Locate the teddy bear backpack on the ground among the dead bodies at the bottom of the hill near the first door you encounter.
+      4. Spend a few seconds looking at the teddy bear. This is the ‚Äúgrizzly scene‚Äù you need to observe.
+      5. After examining the teddy bear, the ‚ÄúNo Picnic‚Äù achievement should pop!
+
+      Remember, it‚Äôs not on the level New Alexandria, despite the misleading description. It‚Äôs actually in Exodus. So, keep an eye out for that teddy bear backpack! üêª
+      ''';
+      Guide_Video: ['https://www.youtube.com/embed/SQFzfHO4ZcQ?si=yp9yZHXEjSKcuV7U'];
       Filter: ['Other'];
     ),
     (
@@ -2855,7 +2865,7 @@ const
     ),
     (
       name: 'Does Whatever a Spartan Can?';
-      description: 'H3: ODST: Destroy a WraithÖwith your bare hands.';
+      description: 'H3: ODST: Destroy a Wraith‚Ä¶with your bare hands.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/217365a643b0107b7148a4784ea9f4ce774b08d7.jpg';
       percent_achieved: '4.9%';
       Gamerscore: -1;
@@ -4294,7 +4304,7 @@ const
       Filter: ['Campaign'];
     ),
     (
-      name: 'Now Just You G˙ta Minute';
+      name: 'Now Just You G√∫ta Minute';
       description: 'Halo: Reach: Beat the par time on Nightfall.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/069f8bd0ab257e065ded00cd33c69610b6b16e91.jpg';
       percent_achieved: '2.1%';
@@ -4704,7 +4714,7 @@ const
       Filter: ['Other'];
     ),
     (
-      name: 'Skulltaker Halo 2: That''s JustÖWrong';
+      name: 'Skulltaker Halo 2: That''s Just‚Ä¶Wrong';
       description: 'Halo 2: Find and claim the That''s Just...Wrong Skull on Legendary.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/93694edc04c8d60aaab3379de1886415b5a645f7.jpg';
       percent_achieved: '1.7%';
@@ -4974,7 +4984,7 @@ const
       Filter: ['Other'];
     ),
     (
-      name: 'This is Not the Greatest Lab in the WorldÖ';
+      name: 'This is Not the Greatest Lab in the World‚Ä¶';
       description: 'Halo: Reach: Find your way into Halsey''s Lab on The Package.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/cb6df8d11eb018dc7a4a5bc28d1642903ec1bbd3.jpg';
       percent_achieved: '1.6%';
@@ -6914,7 +6924,7 @@ const
       Filter: ['Campaign','Co-op Campaign'];
     ),
     (
-      name: 'DÈj‡ Vu';
+      name: 'D√©j√† Vu';
       description: 'H3: ODST: Complete Coastal Highway on 4-player Legendary co-op, with Iron, and no ''Hog or Scorpion.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/d97ee378cac6c6045e2ba998721951299028093c.jpg';
       percent_achieved: '0.5%';
@@ -8331,7 +8341,7 @@ const
       Filter: ['Other'];
     ),
     (
-      name: 'One DownÖ';
+      name: 'One Down‚Ä¶';
       description: 'Destroy a Banished anti-aircraft gun.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1240440/58f1c8e0f28175a5c42d8cbb89a1409c172a79a6.jpg';
       percent_achieved: '8.4%';

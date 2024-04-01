@@ -2,6 +2,7 @@ object frmMain: TfrmMain
   Width = 1820
   Height = 1353
   OnCreate = WebFormCreate
+  OnMouseEnter = WebFormResize
   OnResize = WebFormResize
   OnShow = WebFormShow
   object BackgroundVideo: TWebMultimediaPlayer
@@ -9,6 +10,8 @@ object frmMain: TfrmMain
     Top = 0
     Width = 1820
     Height = 1353
+    HeightStyle = ssPercent
+    WidthStyle = ssPercent
     Align = alClient
     AutoPlay = True
     Loop = True
@@ -21,11 +24,16 @@ object frmMain: TfrmMain
     Top = 0
     Width = 1820
     Height = 1353
+    HeightStyle = ssPercent
+    WidthStyle = ssPercent
     Align = alClient
     BorderStyle = bsNone
     ChildOrder = 1
     Color = clWindow
     ShowCaption = False
+    DesignSize = (
+      1820
+      1353)
     object layHeader: TWebPanel
       Left = 0
       Top = 0
@@ -132,6 +140,7 @@ object frmMain: TfrmMain
         Padding.Bottom = 5
         ShowCaption = False
         Visible = False
+        OnClick = OpenProfileDropDown
         OnMouseEnter = NavMouseEnter
         OnMouseLeave = WebPanelMouseLeave
         object WebImageControl1: TWebImageControl
@@ -143,6 +152,7 @@ object frmMain: TfrmMain
           HeightPercent = 100.000000000000000000
           WidthPercent = 100.000000000000000000
           Align = alLeft
+          OnClick = OpenProfileDropDown
           URL = 'assets/pfp.jpg'
         end
         object lblProfile: TWebLabel
@@ -167,6 +177,7 @@ object frmMain: TfrmMain
           Layout = tlCenter
           ParentFont = False
           WidthPercent = 100.000000000000000000
+          OnClick = OpenProfileDropDown
           ExplicitHeight = 31
         end
       end
@@ -191,7 +202,6 @@ object frmMain: TfrmMain
         Font.Style = []
         HeightPercent = 100.000000000000000000
         ParentFont = False
-        ShowHint = False
         WidthPercent = 100.000000000000000000
         OnClick = btnMultiViewClick
         OnMouseEnter = ButtonMouseEnter
@@ -1290,6 +1300,185 @@ object frmMain: TfrmMain
             ExplicitHeight = 30
           end
           object imgNavSettings: TWebImageControl
+            AlignWithMargins = True
+            Left = 3
+            Top = 0
+            Width = 40
+            Height = 40
+            Margins.Top = 0
+            Margins.Bottom = 0
+            HeightPercent = 100.000000000000000000
+            WidthPercent = 100.000000000000000000
+            Align = alLeft
+            ChildOrder = 2
+            OnClick = NavItemClick
+            URL = 'assets/settings.svg'
+            ExplicitLeft = 46
+          end
+        end
+      end
+    end
+    object layProfileDropDown: TWebPanel
+      Left = 1464
+      Top = 70
+      Width = 336
+      Height = 100
+      Anchors = [akTop, akRight]
+      ChildOrder = 5
+      Color = 2366745
+      Visible = False
+      OnMouseLeave = layProfileDropDownMouseLeave
+      object layNavSignOut: TWebPanel
+        Left = 0
+        Top = 50
+        Width = 336
+        Height = 50
+        Align = alTop
+        BorderStyle = bsNone
+        ChildOrder = 1
+        Color = clWindow
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -21
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        ShowCaption = False
+        object btnNavSignOut: TWebPanel
+          AlignWithMargins = True
+          Left = 5
+          Top = 5
+          Width = 326
+          Height = 40
+          Cursor = crHandPoint
+          Margins.Left = 5
+          Margins.Top = 5
+          Margins.Right = 5
+          Margins.Bottom = 5
+          Align = alClient
+          BorderStyle = bsNone
+          Color = -1
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -21
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          ShowCaption = False
+          OnClick = btnNavSignOutClick
+          OnMouseEnter = NavMouseEnter
+          OnMouseLeave = NavMouseLeave
+          object lblNavSignOut: TWebLabel
+            AlignWithMargins = True
+            Left = 49
+            Top = 4
+            Width = 277
+            Height = 36
+            Margins.Top = 4
+            Margins.Right = 0
+            Margins.Bottom = 0
+            Align = alClient
+            Caption = 'Sign Out'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -21
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            HeightStyle = ssAuto
+            HeightPercent = 100.000000000000000000
+            HTMLType = tSPAN
+            Layout = tlCenter
+            ParentFont = False
+            WidthPercent = 100.000000000000000000
+            OnClick = NavItemClick
+            ExplicitWidth = 81
+            ExplicitHeight = 30
+          end
+          object imgNavSignOut: TWebImageControl
+            AlignWithMargins = True
+            Left = 3
+            Top = 0
+            Width = 40
+            Height = 40
+            Margins.Top = 0
+            Margins.Bottom = 0
+            HeightPercent = 100.000000000000000000
+            WidthPercent = 100.000000000000000000
+            Align = alLeft
+            ChildOrder = 2
+            OnClick = NavItemClick
+            URL = 'assets/settings.svg'
+            ExplicitLeft = 46
+          end
+        end
+      end
+      object layNavProfile: TWebPanel
+        Left = 0
+        Top = 0
+        Width = 336
+        Height = 50
+        Align = alTop
+        BorderStyle = bsNone
+        ChildOrder = 1
+        Color = clWindow
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -21
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        ShowCaption = False
+        object btnNavProfile: TWebPanel
+          AlignWithMargins = True
+          Left = 5
+          Top = 5
+          Width = 326
+          Height = 40
+          Cursor = crHandPoint
+          Margins.Left = 5
+          Margins.Top = 5
+          Margins.Right = 5
+          Margins.Bottom = 5
+          Align = alClient
+          BorderStyle = bsNone
+          Color = -1
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -21
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          ShowCaption = False
+          OnClick = NavItemClick
+          OnMouseEnter = NavMouseEnter
+          OnMouseLeave = NavMouseLeave
+          object lblNavProfile: TWebLabel
+            AlignWithMargins = True
+            Left = 49
+            Top = 4
+            Width = 277
+            Height = 36
+            Margins.Top = 4
+            Margins.Right = 0
+            Margins.Bottom = 0
+            Align = alClient
+            Caption = 'Profile'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -21
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            HeightStyle = ssAuto
+            HeightPercent = 100.000000000000000000
+            HTMLType = tSPAN
+            Layout = tlCenter
+            ParentFont = False
+            WidthPercent = 100.000000000000000000
+            OnClick = NavItemClick
+            ExplicitWidth = 59
+            ExplicitHeight = 30
+          end
+          object imgNavProfile: TWebImageControl
             AlignWithMargins = True
             Left = 3
             Top = 0
