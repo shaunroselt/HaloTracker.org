@@ -13,6 +13,8 @@
 * [Version 1.0.0 (2024/03/07)](#version-100-20240307)
 * [Version 1.0.1 (2024/03/08)](#version-101-20240308)
 * [Version 1.0.2 (2024/03/09)](#version-102-20240309)
+* [Version 1.0.3 (2024/03/17)](#version-103-20240317)
+* [Version 1.0.4 (2024/04/02)](#version-104-20240402)
 
 
 ## Version 1.0.0 (2024/03/07)
@@ -39,3 +41,8 @@ This is the first version of the website. The first version is quite basic and b
 ![Achievement Guide for Halo Achievement Tracker (HaloTracker.org) - Version 1.0.3 (2024/03/17)](https://github.com/shaunroselt/HaloTracker.org/assets/5418178/4a84dd66-94c4-48b5-a784-4498839c50f0)
 - Added Achievement Guide for "I'm Sorry, Dave" and "Sacrifice" in Halo MCC
 - Improved Left Hamburger Menu on Mobile
+
+## Version 1.0.4 (2024/04/02)
+- Added Achievement Guide for "No Picnic" in Halo MCC
+- Left Hamburger Menu will now have the correct item selected on the first page load
+- Optimized Achievements Loading
