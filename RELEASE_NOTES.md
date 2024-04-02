@@ -15,6 +15,7 @@
 * [Version 1.0.2 (2024/03/09)](#version-102-20240309)
 * [Version 1.0.3 (2024/03/17)](#version-103-20240317)
 * [Version 1.0.4 (2024/04/02)](#version-104-20240402)
+* [Version 1.0.5 (2024/04/03)](#version-105-20240403)
 
 
 ## Version 1.0.0 (2024/03/07)
@@ -46,3 +47,9 @@ This is the first version of the website. The first version is quite basic and b
 - Added Achievement Guide for "No Picnic" in Halo MCC
 - The Left Hamburger Menu will now have the correct item selected on the first-page load
 - Optimized Achievements Loading
+
+## Version 1.0.5 (2024/04/03)
+![Home Page for Halo Achievement Tracker (HaloTracker.org) - Version 1.0.5 (2024/04/03)](https://github.com/shaunroselt/HaloTracker.org/assets/5418178/d08a9e9b-6abe-48ad-b9bd-0bdf858fdcfa)
+- Added Achievement Guide for "Your Journey Begins" and "Just Getting Started" in Halo MCC
+- New "The Yappening II" background image for the home page
+
