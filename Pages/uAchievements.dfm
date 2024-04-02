@@ -48,6 +48,7 @@ object Frame_Achievements: TFrame_Achievements
         Font.Height = -19
         Font.Name = 'Segoe UI'
         Font.Style = []
+        HeightStyle = ssAuto
         HeightPercent = 100.000000000000000000
         Layout = tlCenter
         ParentFont = False

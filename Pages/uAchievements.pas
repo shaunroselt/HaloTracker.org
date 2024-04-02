@@ -184,7 +184,10 @@ begin
       window.dispatchEvent(new Event('resize'));
     end;
 
-    AchievementGuideVideo.HTML.Text := '<iframe width="100%" height="100%" src="'+Achievement.Guide_Video[0]+'" title="YouTube video player" style="border: 1px solid white; border-radius: 5px;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+    if (Length(Achievement.Guide_Video) > 0) then
+      AchievementGuideVideo.HTML.Text := '<iframe width="100%" height="100%" src="'+Achievement.Guide_Video[0]+'" title="YouTube video player" style="border: 1px solid white; border-radius: 5px;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+    else
+      AchievementGuideVideo.HTML.Text := '';
   end;
 end;
 
@@ -361,7 +364,7 @@ begin
     MyHTML := '''
     <div class="ElementGuideClick" data-id="${AchievementID}" style="${CursorHand}position: relative;background-color: rgb(25, 29, 36); height: 100px; border-style: solid; border-width: 1px; border-color: rgb(255, 255, 255); margin: 10px 40px;  padding: 0px; border-radius: 5px;">
       <img ${AchievementComplete} src="${AchievementImage}" alt="Halo Achievement - ${AchievementName} (${AchievementDescription})" style="pointer-events: none;top: 13px; left: 13px; width: 74px; height: 74px; position: absolute; border: 2px solid transparent; border-image: linear-gradient(to right, transparent, transparent); border-image-slice: 1;">
-      <div style="min-height: 100%;position: relative;display: flex;align-items: center;margin-left: 100px;color: rgb(255, 255, 255);font-family: &quot;Segoe UI&quot;;Segoe UI&amp;quot;font-style: normal;">
+      <div style="pointer-events: none;min-height: 100%;position: relative;display: flex;align-items: center;margin-left: 100px;color: rgb(255, 255, 255);font-family: &quot;Segoe UI&quot;;Segoe UI&amp;quot;font-style: normal;">
         <div style="padding-right: 10px;flex-grow: 1;">
           <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;font-size: 14pt;margin: 0;">${AchievementName}</h3>
           <h4 style="font-weight: normal;white-space: normal;font-size: 11pt;margin: 0;">${AchievementDescription}</h4>

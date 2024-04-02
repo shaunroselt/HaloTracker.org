@@ -22,8 +22,8 @@ const
       description: 'Complete a campaign mission or a match of multiplayer.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/6fb6ed832c24c8e0594c13cb8a7b08ac28b8d603.jpg';
       percent_achieved: '90.3%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 5;
+      Guide_Description: 'To unlock the "Your Journey Begins" achievement within the Halo: The Master Chief Collection (MCC), you simply need to fully complete any campaign mission or a match of multiplayer.';
       Guide_Video: [];
       Filter: ['Campaign','Co-op Campaign','Multiplayer'];
     ),
@@ -32,8 +32,8 @@ const
       description: 'Kill 100 enemies or players.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/295994d6837f319474877fac6036b13bcc09e7cc.jpg';
       percent_achieved: '80.0%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 5;
+      Guide_Description: 'To unlock the "Just Getting Started" achievement within the Halo: The Master Chief Collection (MCC), you simply need to kill a total of 100 enemies or players in any campaign mission or a match of multiplayer.';
       Guide_Video: [];
       Filter: ['Campaign','Co-op Campaign','Multiplayer'];
     ),
