@@ -245,7 +245,7 @@ object Frame_Settings: TFrame_Settings
           Margins.Right = 0
           Margins.Bottom = 0
           Align = alClient
-          Caption = 'Version 1.0.5 | WEB | RELEASE | 2024/04/03'
+          Caption = 'Version 1.0.6 | WEB | RELEASE | 2024/04/04'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWhite
           Font.Height = -14

@@ -224,7 +224,8 @@ object Frame_Achievements: TFrame_Achievements
       ChildOrder = 1
       ColumnCollection = <
         item
-          Value = 30
+          SizeStyle = ssAbsolute
+          Value = 375
         end
         item
           SizeStyle = ssAuto
@@ -250,7 +251,7 @@ object Frame_Achievements: TFrame_Achievements
       object layAchievementsGridLeft: TWebPanel
         Left = 2
         Top = 2
-        Width = 467
+        Width = 371
         Height = 837
         Align = alClient
         BorderStyle = bsNone
@@ -260,7 +261,7 @@ object Frame_Achievements: TFrame_Achievements
           AlignWithMargins = True
           Left = 20
           Top = 20
-          Width = 427
+          Width = 331
           Height = 25
           Margins.Left = 20
           Margins.Top = 20
@@ -282,7 +283,7 @@ object Frame_Achievements: TFrame_Achievements
           AlignWithMargins = True
           Left = 20
           Top = 175
-          Width = 427
+          Width = 331
           Height = 25
           Margins.Left = 20
           Margins.Top = 20
@@ -304,7 +305,7 @@ object Frame_Achievements: TFrame_Achievements
           AlignWithMargins = True
           Left = 40
           Top = 65
-          Width = 407
+          Width = 311
           Height = 40
           Margins.Left = 40
           Margins.Top = 20
@@ -321,12 +322,13 @@ object Frame_Achievements: TFrame_Achievements
           ParentFont = False
           TextHint = 'Enter Achievement Name'
           WidthPercent = 100.000000000000000000
+          ExplicitWidth = 407
         end
         object btnSearch: TWebButton
           AlignWithMargins = True
           Left = 40
           Top = 115
-          Width = 407
+          Width = 311
           Height = 40
           Cursor = crHandPoint
           Margins.Left = 40
@@ -348,19 +350,20 @@ object Frame_Achievements: TFrame_Achievements
           OnClick = btnSearchClick
           OnMouseEnter = ButtonMouseEnter
           OnMouseLeave = ButtonMouseLeave
+          ExplicitWidth = 407
         end
-        object cbMultiplayer: TWebCheckBox
+        object cbPvPMultiplayer: TWebCheckBox
           AlignWithMargins = True
           Left = 40
-          Top = 264
-          Width = 407
+          Top = 291
+          Width = 311
           Height = 22
           Margins.Left = 40
           Margins.Top = 5
           Margins.Right = 20
           Margins.Bottom = 0
           Align = alTop
-          Caption = 'Multiplayer'
+          Caption = 'PvP Multiplayer'
           Checked = True
           ChildOrder = 4
           Font.Charset = DEFAULT_CHARSET
@@ -373,12 +376,14 @@ object Frame_Achievements: TFrame_Achievements
           State = cbChecked
           WidthPercent = 100.000000000000000000
           OnClick = FilterChange
+          ExplicitTop = 264
+          ExplicitWidth = 407
         end
         object cbCoopCampaign: TWebCheckBox
           AlignWithMargins = True
           Left = 40
           Top = 237
-          Width = 407
+          Width = 311
           Height = 22
           Margins.Left = 40
           Margins.Top = 5
@@ -398,12 +403,13 @@ object Frame_Achievements: TFrame_Achievements
           State = cbChecked
           WidthPercent = 100.000000000000000000
           OnClick = FilterChange
+          ExplicitWidth = 407
         end
         object cbCampaign: TWebCheckBox
           AlignWithMargins = True
           Left = 40
           Top = 210
-          Width = 407
+          Width = 311
           Height = 22
           Margins.Left = 40
           Margins.Top = 10
@@ -423,12 +429,13 @@ object Frame_Achievements: TFrame_Achievements
           State = cbChecked
           WidthPercent = 100.000000000000000000
           OnClick = FilterChange
+          ExplicitWidth = 407
         end
         object cbOther: TWebCheckBox
           AlignWithMargins = True
           Left = 40
-          Top = 291
-          Width = 407
+          Top = 318
+          Width = 311
           Height = 22
           Margins.Left = 40
           Margins.Top = 5
@@ -448,12 +455,40 @@ object Frame_Achievements: TFrame_Achievements
           State = cbChecked
           WidthPercent = 100.000000000000000000
           OnClick = FilterChange
+          ExplicitTop = 291
+          ExplicitWidth = 407
+        end
+        object cbPvEMultiplayer: TWebCheckBox
+          AlignWithMargins = True
+          Left = 40
+          Top = 264
+          Width = 311
+          Height = 22
+          Margins.Left = 40
+          Margins.Top = 5
+          Margins.Right = 20
+          Margins.Bottom = 0
+          Align = alTop
+          Caption = 'PvE Multiplayer'
+          Checked = True
+          ChildOrder = 4
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -14
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          HeightPercent = 100.000000000000000000
+          ParentFont = False
+          State = cbChecked
+          WidthPercent = 100.000000000000000000
+          OnClick = FilterChange
+          ExplicitWidth = 407
         end
       end
       object layAchievementsGridRight: TWebPanel
-        Left = 473
+        Left = 377
         Top = 2
-        Width = 1095
+        Width = 832
         Height = 837
         Align = alClient
         BorderStyle = bsNone
@@ -464,7 +499,7 @@ object Frame_Achievements: TFrame_Achievements
           AlignWithMargins = True
           Left = 20
           Top = 20
-          Width = 1055
+          Width = 792
           Height = 25
           Margins.Left = 20
           Margins.Top = 20
@@ -485,18 +520,19 @@ object Frame_Achievements: TFrame_Achievements
         object layAchievements: TWebScrollBox
           Left = 0
           Top = 65
-          Width = 1095
+          Width = 832
           Height = 772
           Align = alClient
           BorderStyle = bsNone
           ChildOrder = 1
           Color = -1
           ScrollBars = ssVertical
+          ExplicitWidth = 1095
           object layAchievement0: TWebPanel
             AlignWithMargins = True
             Left = 40
             Top = 0
-            Width = 1015
+            Width = 752
             Height = 100
             Margins.Left = 40
             Margins.Top = 0
@@ -506,6 +542,7 @@ object Frame_Achievements: TFrame_Achievements
             BorderColor = clWhite
             Color = 2366745
             ShowCaption = False
+            ExplicitWidth = 1015
             object imgAchievement0: TWebImageControl
               AlignWithMargins = True
               Left = 13
@@ -525,7 +562,7 @@ object Frame_Achievements: TFrame_Achievements
             end
             object lblAchievementUnlocked0: TWebLabel
               AlignWithMargins = True
-              Left = 801
+              Left = 538
               Top = 0
               Width = 201
               Height = 100
@@ -551,7 +588,7 @@ object Frame_Achievements: TFrame_Achievements
               AlignWithMargins = True
               Left = 100
               Top = 13
-              Width = 701
+              Width = 438
               Height = 74
               Margins.Left = 0
               Margins.Top = 13
@@ -564,10 +601,11 @@ object Frame_Achievements: TFrame_Achievements
               Padding.Top = 4
               Padding.Bottom = 6
               ShowCaption = False
+              ExplicitWidth = 701
               object lblAchievementPercent0: TWebLabel
                 Left = 0
                 Top = 49
-                Width = 701
+                Width = 438
                 Height = 19
                 Margins.Left = 0
                 Margins.Top = 0
@@ -588,7 +626,7 @@ object Frame_Achievements: TFrame_Achievements
               object lblAchievementDescription0: TWebLabel
                 Left = 0
                 Top = 29
-                Width = 701
+                Width = 438
                 Height = 20
                 Margins.Left = 0
                 Margins.Top = 0
@@ -611,7 +649,7 @@ object Frame_Achievements: TFrame_Achievements
               object lblAchievementName0: TWebLabel
                 Left = 0
                 Top = 4
-                Width = 701
+                Width = 438
                 Height = 25
                 Margins.Left = 0
                 Margins.Top = 0

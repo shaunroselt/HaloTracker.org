@@ -23,9 +23,9 @@ const
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/6fb6ed832c24c8e0594c13cb8a7b08ac28b8d603.jpg';
       percent_achieved: '90.3%';
       Gamerscore: 5;
-      Guide_Description: 'To unlock the "Your Journey Begins" achievement within the Halo: The Master Chief Collection (MCC), you simply need to fully complete any campaign mission or a match of multiplayer.';
+      Guide_Description: 'To unlock the "Your Journey Begins" achievement within Halo: The Master Chief Collection (MCC), you simply need to fully complete any campaign mission or a match of multiplayer.';
       Guide_Video: [];
-      Filter: ['Campaign','Co-op Campaign','Multiplayer'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Just Getting Started';
@@ -33,18 +33,18 @@ const
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/295994d6837f319474877fac6036b13bcc09e7cc.jpg';
       percent_achieved: '80.0%';
       Gamerscore: 5;
-      Guide_Description: 'To unlock the "Just Getting Started" achievement within the Halo: The Master Chief Collection (MCC), you simply need to kill a total of 100 enemies or players in any campaign mission or a match of multiplayer.';
+      Guide_Description: 'To unlock the "Just Getting Started" achievement within Halo: The Master Chief Collection (MCC), you simply need to kill a total of 100 enemies or players in any campaign mission or a match of multiplayer.';
       Guide_Video: [];
-      Filter: ['Campaign','Co-op Campaign','Multiplayer'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'I''m Sorry, Dave';
       description: 'Halo: Reach: Find the hidden binary signature.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/fe21255dc623761447e3caf84522b1fb95212ca0.jpg';
       percent_achieved: '75.8%';
-      Gamerscore: -1;
+      Gamerscore: 5;
       Guide_Description: '''
-      To unlock the "I’m Sorry, Dave" achievement in Halo: Reach within the Halo: The Master Chief Collection (MCC), you need to locate a specific easter egg that pays homage to David Candland, the game’s UI director. Here’s a detailed guide on how to find it:
+      To unlock the "I’m Sorry, Dave" achievement in Halo: Reach within Halo: The Master Chief Collection (MCC), you need to locate a specific easter egg that pays homage to David Candland, the game’s UI director. Here’s a detailed guide on how to find it:
 
       1. Start any campaign mission or multiplayer map in Halo: Reach.
       2. Pick up a weapon that **does not** have a zooming scope feature. Common examples include the Assault Rifle or the Plasma Pistol.
@@ -55,37 +55,37 @@ const
       By following these steps and observing the binary code, you will unlock the "I’m Sorry, Dave" achievement.
       ''';
       Guide_Video: ['https://www.youtube.com/embed/ROoEebxqwJM?si=hdYc8YVHFQ-OTlsN'];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Balaho''s Most Wanted';
       description: 'Kill 100 Grunts.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/69f15b3ba103e1ffd9febaecf5f3aa6e5cbda9f6.jpg';
       percent_achieved: '71.0%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 5;
+      Guide_Description: 'To unlock the "Balaho’s Most Wanted" achievement in Halo: The Master Chief Collection (MCC), you’ll need to eliminate a combined total of 100 Grunts in PVE mode, which includes Campaign, Firefight, and Spartan Ops. Fortunately, this achievement can be easily unlocked by playing normally.';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer'];
     ),
     (
       name: 'Where Am I?';
       description: 'Complete 10 missions or multiplayer games.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/883e801b34c009efc89372588f3a8b55b9d149bc.jpg';
       percent_achieved: '62.0%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 5;
+      Guide_Description: 'To unlock the "Where Am I?" achievement within Halo: The Master Chief Collection (MCC), you simply need to fully complete a total of 10 campaign missions or 10 matches of multiplayer.';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'The One Percent';
       description: 'Kill 100 Elites.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/8462cdf780c272b9ebbae5c31ab859eb3c684841.jpg';
       percent_achieved: '56.2%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 5;
+      Guide_Description: 'To unlock the "The One Percent" achievement in Halo: The Master Chief Collection (MCC), you’ll need to eliminate a combined total of 100 Elites in PVE mode, which includes Campaign, Firefight, and Spartan Ops. Fortunately, this achievement can be easily unlocked by playing normally.';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer'];
     ),
     (
       name: 'We''re Just Getting Started';
@@ -95,17 +95,17 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign'];
     ),
     (
       name: 'Spoilsport';
       description: 'Kill 100 Jackals.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/de9f255b9dd5ea58551c52d95195407f60f49051.jpg';
       percent_achieved: '54.7%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 5;
+      Guide_Description: 'To unlock the "Spoilsport" achievement in Halo: The Master Chief Collection (MCC), you’ll need to eliminate a combined total of 100 Jackals in PVE mode, which includes Campaign, Firefight, and Spartan Ops. Fortunately, this achievement can be easily unlocked by playing normally.';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer'];
     ),
     (
       name: 'Just A Taste';
@@ -135,7 +135,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Co-op Campaign','Multiplayer'];
+      Filter: ['Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Pillar of Autumn';
@@ -1301,7 +1301,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Kikowani Station';
@@ -1381,7 +1381,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['PvE Multiplayer'];
     ),
     (
       name: 'Coastal Highway';
@@ -1491,7 +1491,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Examiner';
@@ -1651,7 +1651,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Urban Warfare Badge';
@@ -1821,7 +1821,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Inspector';
@@ -2161,7 +2161,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Operation Completion';
@@ -2561,7 +2561,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Double Trouble';
@@ -2571,7 +2571,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Skulltaker Halo 3: Mythic';
@@ -2671,7 +2671,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Skulltaker Halo: CE: Iron';
@@ -3121,7 +3121,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Reed the Strategy';
@@ -3161,7 +3161,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Vetro Strike';
@@ -3201,7 +3201,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Mean Streets of New Mombasa';
@@ -3351,7 +3351,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'No-Fly Zone';
@@ -3811,7 +3811,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Skulltaker Halo 3: Cowbell';
@@ -4211,7 +4211,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Nagato Makes Moving Easy';
@@ -4661,7 +4661,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Catherine';
@@ -4881,7 +4881,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'One Got Away';
@@ -5021,7 +5021,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'The Answer is Simple';
@@ -5491,7 +5491,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Skeet Shooter';
@@ -5501,7 +5501,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'The Will of the Prophets';
@@ -5521,7 +5521,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'He''s Running a Marathon...';
@@ -5561,7 +5561,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Gate Your Thirst!';
@@ -5571,7 +5571,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Would It''ve Killed You To Take The Elevator';
@@ -5591,7 +5591,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Waypoint';
@@ -5781,7 +5781,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'My Work is Done';
@@ -5841,7 +5841,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Shields Up!';
@@ -5851,7 +5851,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Bill Past Due';
@@ -5871,7 +5871,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Shut. Down. Everything.';
@@ -5931,7 +5931,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Bloody Thirsty!';
@@ -5941,7 +5941,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Pyrrhic Solution';
@@ -6131,7 +6131,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Whistle Stop Tour';
@@ -6221,7 +6221,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Did Somebody Say...';
@@ -6281,7 +6281,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Who Needs Them?';
@@ -6321,7 +6321,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Sample Plate';
@@ -6341,7 +6341,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Overachiever';
@@ -6441,7 +6441,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Chol Von''s Not Gonna Like This';
@@ -6481,7 +6481,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Planting A Flag';
@@ -6491,7 +6491,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Vandalized';
@@ -6771,7 +6771,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Icarus';
@@ -6791,7 +6791,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'No Easy Way Out';
@@ -6831,7 +6831,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Invaders Repelled';
@@ -6841,7 +6841,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Annual';
@@ -7021,7 +7021,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Rock and Coil Hit Back';
@@ -7031,7 +7031,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'LASO Master';
@@ -7114,7 +7114,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Bringing in the Big Guns';
@@ -7154,7 +7154,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Off to the Races';
@@ -7164,7 +7164,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Flag Monger';
@@ -7174,7 +7174,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Spartan Decimation';
@@ -7184,7 +7184,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Into the Fire';
@@ -7754,7 +7754,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['PvE Multiplayer'];
     ),
     (
       name: 'Tour of Duty';
@@ -7764,7 +7764,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['PvE Multiplayer'];
     ),
     (
       name: 'Dangerous Game';
@@ -7774,7 +7774,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['PvE Multiplayer'];
     )
   );
 
@@ -7828,7 +7828,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Passion for Fashion';
@@ -7868,7 +7868,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: '"Need a Weapon?"';
@@ -7898,7 +7898,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'You''re Up, Rook''';
@@ -7918,7 +7918,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Running Laps';
@@ -7928,7 +7928,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Customary';
@@ -7958,7 +7958,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'That Thing on the Left is the Brake';
@@ -7978,7 +7978,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Sharpshooter';
@@ -8008,7 +8008,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Bomb Returned';
@@ -8018,7 +8018,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Control Freak';
@@ -8028,7 +8028,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Zone Ranger';
@@ -8038,7 +8038,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Back to the Chopper';
@@ -8048,7 +8048,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'First Contact';
@@ -8158,7 +8158,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'A Fellow of Infinite Jest';
@@ -8168,7 +8168,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Working Remote';
@@ -8178,7 +8178,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Reclaimer';
@@ -8308,7 +8308,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Whip-Riding the Ghost';
@@ -8368,7 +8368,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Gun Runner';
@@ -8458,7 +8458,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Eld Aficionado';
@@ -8548,7 +8548,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Bare Your Fangs';
@@ -8598,7 +8598,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Resurgency';
@@ -8628,7 +8628,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Bloodstars'' Bane';
@@ -8668,7 +8668,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'All-Seeing I';
@@ -8698,7 +8698,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Thrusters On Full';
@@ -8748,7 +8748,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Secret Stash';
@@ -8758,7 +8758,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Fight Hard, Die Well';
@@ -8798,7 +8798,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Armory Amore';
@@ -8908,7 +8908,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Multiplayer'];
+      Filter: ['PvP Multiplayer'];
     ),
     (
       name: 'Off the Air';

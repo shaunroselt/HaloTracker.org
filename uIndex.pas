@@ -432,7 +432,8 @@ end;
 procedure TfrmMain.WebFormCreate(Sender: TObject);
 begin
   {$IFDEF RELEASE}
-    document.body.insertAdjacentHTML('beforeend','<script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>');
+    if (GetQueryParam('EnableDebug').ToLower.Trim <> 'true') then
+      document.body.insertAdjacentHTML('beforeend','<script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>');
 
     lblNavSearch.Caption := 'Home';
     edtSearch.Visible := False;

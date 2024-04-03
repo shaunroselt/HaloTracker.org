@@ -53,3 +53,8 @@ This is the first version of the website. The first version is quite basic and b
 - Added Achievement Guide for "Your Journey Begins" and "Just Getting Started" in Halo MCC
 - New "The Yappening II" background image for the home page
 
+## Version 1.0.6 (2024/04/04)
+- Added Achievement Guide for "Balaho's Most Wanted", "Where Am I?", "The One Percent and "Spoilsport" in Halo MCC
+- Improved Achievement Filters
+- Improved UI for "404 Page Not Found" page
+- Improved Layout on Achievement Page for large displays

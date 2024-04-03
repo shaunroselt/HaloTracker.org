@@ -40,7 +40,7 @@ type
     btnSearch: TWebButton;
     lblSearch: TWebLabel;
     WebLabel8: TWebLabel;
-    cbMultiplayer: TWebCheckBox;
+    cbPvPMultiplayer: TWebCheckBox;
     cbCoopCampaign: TWebCheckBox;
     cbCampaign: TWebCheckBox;
     WebLabel10: TWebLabel;
@@ -57,6 +57,7 @@ type
     btnAchievementGuideName: TWebPanel;
     lblAchievementGuideName: TWebLabel;
     imgAchievementImage: TWebImageControl;
+    cbPvEMultiplayer: TWebCheckBox;
     procedure WebFrameResize(Sender: TObject);
     procedure WebButton1Click(Sender: TObject);
     procedure ButtonMouseEnter(Sender: TObject);
@@ -407,7 +408,10 @@ begin
       if cbCoopCampaign.Checked and MatchText('Co-op Campaign',Achievement.Filter) then
         ShowAchievement := True;
 
-      if cbMultiplayer.Checked and MatchText('Multiplayer',Achievement.Filter) then
+      if cbPvEMultiplayer.Checked and MatchText('PvE Multiplayer',Achievement.Filter) then
+        ShowAchievement := True;
+
+      if cbPvPMultiplayer.Checked and MatchText('PvP Multiplayer',Achievement.Filter) then
         ShowAchievement := True;
 
       if cbOther.Checked and MatchText('Other',Achievement.Filter) then
@@ -625,7 +629,15 @@ begin
   if layAchievementsContainer.Width > 1000 then
   begin
     layAchievementsGrid.ColumnCollection.Add;
-    layAchievementsGrid.ColumnCollection.Items[0].Value := 30;
+    if layAchievementsContainer.Width > 1200 then
+    begin
+      layAchievementsGrid.ColumnCollection.Items[0].SizeStyle := ssAbsolute;
+      layAchievementsGrid.ColumnCollection.Items[0].Value := 375;
+    end else
+    begin
+      layAchievementsGrid.ColumnCollection.Items[0].SizeStyle := ssPercent;
+      layAchievementsGrid.ColumnCollection.Items[0].Value := 30;
+    end;
     layAchievementsGrid.ColumnCollection.Add;
     layAchievementsGrid.ColumnCollection.Items[1].SizeStyle := ssAuto;
     layAchievementsGrid.RowCollection.Add;
