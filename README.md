@@ -7,7 +7,7 @@
 
 Cross-Platform Halo Achievement Tracker App and Website ([HaloTracker.org](https://halotracker.org/))
 
-![Halo Achievement Tracker (HaloTracker.org)](https://github.com/shaunroselt/HaloTracker.org/assets/5418178/5d74a68a-3724-49d8-a4bc-834856f12d3d)
+![Halo Achievement Tracker (HaloTracker.org)](https://github.com/shaunroselt/HaloTracker.org/assets/5418178/1c7f88d5-d1a9-4930-85fc-d2d9abd58adf)
 
 _Note: Everything is still in active development with lots of bugs_
 
