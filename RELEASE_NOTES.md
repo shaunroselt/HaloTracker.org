@@ -16,7 +16,8 @@
 * [Version 1.0.3 (2024/03/17)](#version-103-20240317)
 * [Version 1.0.4 (2024/04/02)](#version-104-20240402)
 * [Version 1.0.5 (2024/04/03)](#version-105-20240403)
-
+* [Version 1.0.6 (2024/04/04)](#version-106-20240404)
+  
 
 ## Version 1.0.0 (2024/03/07)
 ![Home Page for Halo Achievement Tracker (HaloTracker.org) - Version 1.0.0 (2024/03/07)](https://github.com/shaunroselt/HaloTracker.org/assets/5418178/f0200da5-9108-45b7-952a-4817ee110518)
@@ -54,6 +55,7 @@ This is the first version of the website. The first version is quite basic and b
 - New "The Yappening II" background image for the home page
 
 ## Version 1.0.6 (2024/04/04)
+![Achievements Page for Halo Achievement Tracker (HaloTracker.org) - Version 1.0.6 (2024/04/04)](https://github.com/shaunroselt/HaloTracker.org/assets/5418178/1c7f88d5-d1a9-4930-85fc-d2d9abd58adf)
 - Added Achievement Guide for "Balaho's Most Wanted", "Where Am I?", "The One Percent and "Spoilsport" in Halo MCC
 - Improved Achievement Filters
 - Improved UI for "404 Page Not Found" page
