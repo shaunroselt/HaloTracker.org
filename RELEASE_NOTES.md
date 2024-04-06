@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="160" align="center" src="/assets/halo-mcc.png">
+  <img width="160" align="center" src="Website/assets/halo-mcc.png">
 </p>
 <h1 align="center">
   Halo Achievement Tracker
