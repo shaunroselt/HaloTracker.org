@@ -63,5 +63,21 @@ This is the first version of the website. The first version is quite basic and b
 - Improved Layout on Achievement Page for large displays
 
 ## Version 1.0.7 (Unreleased)
-- Added Many New Achievement Guides
+- Added Achievement Guides in Halo MCC for:
+  - We're Just Getting Started
+  - Just A Taste
+  - Protocol Dictates Action
+  - Stick With It...A Little Longer
+  - Pillar of Autumn
+  - The Guardians Are Coming
+  - All Out of Bubblegum
+  - A Pile of Medals
+  - A Crate of Medals
+  - A Heap of Medals
+  - A Few Trinkets
+  - Oh, These Baubles?
+  - Chesty Puller Starter Kit
+  - Medal Master Chief
+  - The Good, The Bad, and The Dead
+  - Medal Completionist
 - Improved Achievement Filters
