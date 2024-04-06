@@ -10,14 +10,14 @@
 
 
 ## Release Notes
-* [Version 1.0.0 (2024/03/07)](#version-100-20240307)
-* [Version 1.0.1 (2024/03/08)](#version-101-20240308)
-* [Version 1.0.2 (2024/03/09)](#version-102-20240309)
-* [Version 1.0.3 (2024/03/17)](#version-103-20240317)
-* [Version 1.0.4 (2024/04/02)](#version-104-20240402)
-* [Version 1.0.5 (2024/04/03)](#version-105-20240403)
-* [Version 1.0.6 (2024/04/04)](#version-106-20240404)
-* [Version 1.0.7 (Unreleased)](#version-107-unreleased)
+- [Version 1.0.0 (2024/03/07)](#version-100-20240307)
+- [Version 1.0.1 (2024/03/08)](#version-101-20240308)
+- [Version 1.0.2 (2024/03/09)](#version-102-20240309)
+- [Version 1.0.3 (2024/03/17)](#version-103-20240317)
+- [Version 1.0.4 (2024/04/02)](#version-104-20240402)
+- [Version 1.0.5 (2024/04/03)](#version-105-20240403)
+- [Version 1.0.6 (2024/04/04)](#version-106-20240404)
+- [Version 1.0.7 (Unreleased)](#version-107-unreleased)
   
 
 ## Version 1.0.0 (2024/03/07)
