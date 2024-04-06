@@ -48,7 +48,7 @@ const
 
       1. Start any campaign mission or multiplayer map in Halo: Reach.
       2. Pick up a weapon that **does not** have a zooming scope feature. Common examples include the Assault Rifle or the Plasma Pistol.
-      3. Press the zoom button (usually the right stick on consoles or the designated key on PC) to ’zoom in’ with your unscoped weapon.
+      3. Press the zoom button (usually the right stick on consoles or the designated key on PC) to "zoom in" with your unscoped weapon.
       4. Look closely at the **bottom left corner** of your screen. You will notice a string of binary code appearing briefly.
       5. This binary code translates to the word "Dave" in ASCII binary representation.
 
@@ -92,9 +92,9 @@ const
       description: 'Halo: Reach: Complete Winter Contingency.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/220809a19b1fc7605ab7a24c88535e2882ded420.jpg';
       percent_achieved: '56.1%';
-      Gamerscore: -1;
-      Guide_Description: '';
-      Guide_Video: [];
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "We''re Just Getting Started" achievement in Halo: Reach within Halo: The Master Chief Collection (MCC), you simply need to play through the "Winter Contingency" mission from beginning to end on any difficulty.';
+      Guide_Video: ['https://www.youtube.com/embed/R68CarUVXis?si=6mLYOfvRyJXtsU4J'];
       Filter: ['Campaign','Co-op Campaign'];
     ),
     (
@@ -112,29 +112,33 @@ const
       description: 'Collect 500 campaign or playlist medals.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/8286861410532449f5acb4ad2659565b4ebb18de.jpg';
       percent_achieved: '50.6%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 5;
+      Guide_Description: 'To unlock the "Just A Taste" achievement in Halo: The Master Chief Collection (MCC), you’ll need to collect 500 campaign or playlist medals. These medals can be earned while playing the campaign or participating in matchmaking. To maximize your progress, focus on killing enemies swiftly and efficiently, aiming for multi-kill and killing spree medals. Playing on Easy difficulty in the campaign is recommended, as it allows you to accumulate medals without the added challenge of higher difficulties.';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Protocol Dictates Action';
       description: 'Halo: Reach: Complete ONI: Sword Base.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/4db3b9feb3351449a0d318e846bfbc70f24f6041.jpg';
       percent_achieved: '49.4%';
-      Gamerscore: -1;
-      Guide_Description: '';
-      Guide_Video: [];
-      Filter: ['Other'];
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "Protocol Dictates Action" achievement in Halo: Reach within Halo: The Master Chief Collection (MCC), you simply need to play through the "Protocol Dictates Action" mission from beginning to end on any difficulty.';
+      Guide_Video: ['https://www.youtube.com/embed/dxY3XsUY5cM?si=xbIRAkay9JBuAM1O'];
+      Filter: ['Campaign','Co-op Campaign'];
     ),
     (
       name: 'Stick With It...A Little Longer';
       description: 'Play a multiplayer or co-op game at least 3 months after your first game.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/7c8b1632e37e7da26f986dcc5c91e0609c416eed.jpg';
       percent_achieved: '48.1%';
-      Gamerscore: -1;
-      Guide_Description: '';
-      Guide_Video: [];
+      Gamerscore: 5;
+      Guide_Description: '''
+      To unlock "Stick With It...A Little Longer" achievement in Halo: The Master Chief Collection (MCC), you simply need to play a multiplayer or co-op game at least 3 months after you played your first game.
+
+      Unlike other achievements, this one cannot be unlocked by manipulating your system’s date, as it is verified by the server.
+      ''';
+      Guide_Video: ['https://www.youtube.com/embed/cm2PYxfcZuY?si=YGky4--Qz8vWVouv'];
       Filter: ['Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
@@ -142,20 +146,32 @@ const
       description: 'Halo CE: Complete The Pillar of Autumn.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/c4044114ec5ace082384406777e90e1e73f78a7b.jpg';
       percent_achieved: '47.8%';
-      Gamerscore: -1;
-      Guide_Description: '';
-      Guide_Video: [];
-      Filter: ['Other'];
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "Pillar of Autumn" achievement in Halo: CE within Halo: The Master Chief Collection (MCC), you simply need to play through the "Pillar of Autumn" mission from beginning to end on any difficulty.';
+      Guide_Video: ['https://www.youtube.com/embed/LlkZ5p8Gqys?si=cEMFccsF5K8CruqF'];
+      Filter: ['Campaign','Co-op Campaign'];
     ),
     (
       name: 'The Guardians Are Coming';
       description: 'Get killed by the Guardians.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/be40be591cab35d4ff92e1953a0e679a671934ff.jpg';
       percent_achieved: '47.7%';
-      Gamerscore: -1;
-      Guide_Description: '';
-      Guide_Video: [];
-      Filter: ['Other'];
+      Gamerscore: 5;
+      Guide_Description: '''
+      The "The Guardians Are Coming" achievement in Halo: The Master Chief Collection (MCC) can be unlocked by meeting a rather unusual fate: getting killed in a manner that baffles the game engine. When this happens, the game typically displays the message, "You were killed by The Guardians." Here’s a straightforward method to earn this achievement:
+
+      1. On the main menu of Halo MCC, select the Halo 2 campaign.
+      2. Go to mission select.
+      3. Set the scarab skull as active.
+      4. Load the first mission or any other mission you prefer.
+      5. Play until you acquire a weapon.
+      6. Shoot the floor.
+      7. Achievement unlocked!
+      
+      If you follow these steps, you’ll have "The Guardians Are Coming" in your collection.
+      ''';
+      Guide_Video: ['https://www.youtube.com/embed/Dm7xLp4wA_Q?si=I9EqBy-aJwUHubIU'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'My Buddy Chips';
@@ -202,10 +218,10 @@ const
       description: 'Collect 1,000 campaign or playlist medals.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/7e6141839db0901e21951f0a5c7ca4a1934bfb92.jpg';
       percent_achieved: '40.6%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "All Out of Bubblegum" achievement in Halo: The Master Chief Collection (MCC), you’ll need to collect 1000 campaign or playlist medals. These medals can be earned while playing the campaign or participating in matchmaking. To maximize your progress, focus on killing enemies swiftly and efficiently, aiming for multi-kill and killing spree medals. Playing on Easy difficulty in the campaign is recommended, as it allows you to accumulate medals without the added challenge of higher difficulties.';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'To War';
@@ -442,10 +458,10 @@ const
       description: 'Collect 2,000 campaign or playlist medals.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/7bb7c58b0af15ad15799a815e85fe4487981de85.jpg';
       percent_achieved: '29.9%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "A Pile of Medals" achievement in Halo: The Master Chief Collection (MCC), you’ll need to collect 2000 campaign or playlist medals. These medals can be earned while playing the campaign or participating in matchmaking. To maximize your progress, focus on killing enemies swiftly and efficiently, aiming for multi-kill and killing spree medals. Playing on Easy difficulty in the campaign is recommended, as it allows you to accumulate medals without the added challenge of higher difficulties.';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Outskirts';
@@ -628,10 +644,10 @@ const
       description: 'Collect 3,000 campaign or playlist medals.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/dd16a4bc52979419075d7b04770ac5a4bc1cd6b2.jpg';
       percent_achieved: '23.8%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "A Crate of Medals" achievement in Halo: The Master Chief Collection (MCC), you’ll need to collect 3000 campaign or playlist medals. These medals can be earned while playing the campaign or participating in matchmaking. To maximize your progress, focus on killing enemies swiftly and efficiently, aiming for multi-kill and killing spree medals. Playing on Easy difficulty in the campaign is recommended, as it allows you to accumulate medals without the added challenge of higher difficulties.';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Assault';
@@ -928,10 +944,10 @@ const
       description: 'Collect 4,000 campaign or playlist medals.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/48052b4fe40c5123a908565a6363e1df84216870.jpg';
       percent_achieved: '19.5%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "A Heap of Medals" achievement in Halo: The Master Chief Collection (MCC), you’ll need to collect 4000 campaign or playlist medals. These medals can be earned while playing the campaign or participating in matchmaking. To maximize your progress, focus on killing enemies swiftly and efficiently, aiming for multi-kill and killing spree medals. Playing on Easy difficulty in the campaign is recommended, as it allows you to accumulate medals without the added challenge of higher difficulties.';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'High Charity';
@@ -1168,10 +1184,10 @@ const
       description: 'Collect 5,000 campaign or playlist medals.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/453486c6e47d5f789f3143586548702b872fdceb.jpg';
       percent_achieved: '16.1%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "A Few Trinkets" achievement in Halo: The Master Chief Collection (MCC), you’ll need to collect 5000 campaign or playlist medals. These medals can be earned while playing the campaign or participating in matchmaking. To maximize your progress, focus on killing enemies swiftly and efficiently, aiming for multi-kill and killing spree medals. Playing on Easy difficulty in the campaign is recommended, as it allows you to accumulate medals without the added challenge of higher difficulties.';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Prophet''s Bane';
@@ -1438,10 +1454,10 @@ const
       description: 'Collect 6,000 campaign or playlist medals.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/b0b0979d6cf10a8579db3bc8eb7c688d261915a1.jpg';
       percent_achieved: '13.1%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "Oh, These Baubles?" achievement in Halo: The Master Chief Collection (MCC), you’ll need to collect 6000 campaign or playlist medals. These medals can be earned while playing the campaign or participating in matchmaking. To maximize your progress, focus on killing enemies swiftly and efficiently, aiming for multi-kill and killing spree medals. Playing on Easy difficulty in the campaign is recommended, as it allows you to accumulate medals without the added challenge of higher difficulties.';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Delighted';
@@ -1728,10 +1744,10 @@ const
       description: 'Collect 7,000 campaign or playlist medals.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/6fe6e16af37b22780c6921799d0cf82fbd50a520.jpg';
       percent_achieved: '10.8%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "Chesty Puller Starter Kit" achievement in Halo: The Master Chief Collection (MCC), you’ll need to collect 7000 campaign or playlist medals. These medals can be earned while playing the campaign or participating in matchmaking. To maximize your progress, focus on killing enemies swiftly and efficiently, aiming for multi-kill and killing spree medals. Playing on Easy difficulty in the campaign is recommended, as it allows you to accumulate medals without the added challenge of higher difficulties.';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Wake Up, John';
@@ -1908,10 +1924,10 @@ const
       description: 'Collect 8,000 campaign or playlist medals.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/215fbb90edce27d1ce9d961ec06fbddbbbbcb01b.jpg';
       percent_achieved: '9.1%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "Medal Master Chief" achievement in Halo: The Master Chief Collection (MCC), you’ll need to collect 8000 campaign or playlist medals. These medals can be earned while playing the campaign or participating in matchmaking. To maximize your progress, focus on killing enemies swiftly and efficiently, aiming for multi-kill and killing spree medals. Playing on Easy difficulty in the campaign is recommended, as it allows you to accumulate medals without the added challenge of higher difficulties.';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Up All Night';
@@ -2148,10 +2164,10 @@ const
       description: 'Collect 9,000 campaign or playlist medals.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/e33a11435f2be07894f8e2d3e677fdbbbc925ecc.jpg';
       percent_achieved: '7.9%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "The Good, The Bad, and The Dead" achievement in Halo: The Master Chief Collection (MCC), you’ll need to collect 9000 campaign or playlist medals. These medals can be earned while playing the campaign or participating in matchmaking. To maximize your progress, focus on killing enemies swiftly and efficiently, aiming for multi-kill and killing spree medals. Playing on Easy difficulty in the campaign is recommended, as it allows you to accumulate medals without the added challenge of higher difficulties.';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Counter-Sniped';
@@ -2368,10 +2384,10 @@ const
       description: 'Collect 10,000 campaign or playlist medals.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/76002d2df62d1455e95975e1a39dba49ea0365b2.jpg';
       percent_achieved: '6.9%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 20;
+      Guide_Description: 'To unlock the "Medal Completionist" achievement in Halo: The Master Chief Collection (MCC), you’ll need to collect 10000 campaign or playlist medals. These medals can be earned while playing the campaign or participating in matchmaking. To maximize your progress, focus on killing enemies swiftly and efficiently, aiming for multi-kill and killing spree medals. Playing on Easy difficulty in the campaign is recommended, as it allows you to accumulate medals without the added challenge of higher difficulties.';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign','PvE Multiplayer','PvP Multiplayer'];
     ),
     (
       name: 'Knowledgable';
@@ -6731,7 +6747,7 @@ const
       Gamerscore: -1;
       Guide_Description: '';
       Guide_Video: [];
-      Filter: ['Other'];
+      Filter: ['Campaign','Co-op Campaign'];
     ),
     (
       name: 'Look Out for the Little Guys';

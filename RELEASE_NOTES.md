@@ -17,6 +17,7 @@
 * [Version 1.0.4 (2024/04/02)](#version-104-20240402)
 * [Version 1.0.5 (2024/04/03)](#version-105-20240403)
 * [Version 1.0.6 (2024/04/04)](#version-106-20240404)
+* [Version 1.0.7 (Unreleased)](#version-107-unreleased)
   
 
 ## Version 1.0.0 (2024/03/07)
@@ -60,3 +61,7 @@ This is the first version of the website. The first version is quite basic and b
 - Improved Achievement Filters
 - Improved UI for "404 Page Not Found" page
 - Improved Layout on Achievement Page for large displays
+
+## Version 1.0.7 (Unreleased)
+- Added Many New Achievement Guides
+- Improved Achievement Filters
