@@ -9,6 +9,7 @@
         <TargetedPlatforms>1</TargetedPlatforms>
         <AppType>Application</AppType>
         <MainSource>HaloTracker_Web.dpr</MainSource>
+        <ProjectName Condition="'$(ProjectName)'==''">HaloTracker_Web</ProjectName>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
         <Base>true</Base>
@@ -129,17 +130,37 @@
             <DesignClass>TWebFrame</DesignClass>
         </DCCReference>
         <DCCReference Include="Lib\uCookies.pas"/>
+        <DCCReference Include="PopUps\tPopUp.pas">
+            <Form>Template_PopUp</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TWebFrame</DesignClass>
+        </DCCReference>
         <None Include="index.html"/>
         <None Include="assets\background.mp4"/>
         <RcItem Include="assets\background-mcc.jpg">
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>JpgImage_1</ResourceId>
         </RcItem>
-        <None Include="assets\search.svg"/>
-        <None Include="assets\achievements.svg"/>
-        <None Include="assets\settings.svg"/>
-        <None Include="assets\chevron-down.svg"/>
-        <None Include="assets\chevron-up.svg"/>
+        <None Include="assets\search.svg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SvgImage_1</ResourceId>
+        </None>
+        <None Include="assets\achievements.svg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SvgImage_2</ResourceId>
+        </None>
+        <None Include="assets\settings.svg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SvgImage_3</ResourceId>
+        </None>
+        <None Include="assets\chevron-down.svg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SvgImage_4</ResourceId>
+        </None>
+        <None Include="assets\chevron-up.svg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SvgImage_5</ResourceId>
+        </None>
         <RcItem Include="assets\halo-2.png">
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>PngImage_1</ResourceId>
@@ -176,32 +197,63 @@
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>PngImage_9</ResourceId>
         </RcItem>
-        <None Include="LICENSE"/>
-        <None Include="README.md"/>
         <RcItem Include="assets\halo5.jpg">
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>JpgImage_2</ResourceId>
         </RcItem>
-        <None Include="assets\translate.svg"/>
-        <None Include="assets\link.svg"/>
-        <None Include="assets\copy.svg"/>
-        <None Include="assets\journal-code.svg"/>
-        <None Include="assets\bug.svg"/>
-        <None Include="assets\app.svg"/>
-        <None Include="assets\github.svg"/>
-        <None Include="assets\asterisk.svg"/>
+        <None Include="assets\translate.svg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SvgImage_6</ResourceId>
+        </None>
+        <None Include="assets\link.svg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SvgImage_7</ResourceId>
+        </None>
+        <None Include="assets\copy.svg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SvgImage_8</ResourceId>
+        </None>
+        <None Include="assets\journal-code.svg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SvgImage_9</ResourceId>
+        </None>
+        <None Include="assets\bug.svg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SvgImage_10</ResourceId>
+        </None>
+        <None Include="assets\app.svg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SvgImage_11</ResourceId>
+        </None>
+        <None Include="assets\github.svg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SvgImage_12</ResourceId>
+        </None>
+        <None Include="assets\asterisk.svg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SvgImage_13</ResourceId>
+        </None>
         <RcItem Include="assets\pfp.jpg">
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>JpgImage_3</ResourceId>
         </RcItem>
-        <None Include="RELEASE_NOTES.md"/>
         <None Include=".gitignore"/>
         <RcItem Include="assets\background-infinite.jpg">
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>JpgImage_4</ResourceId>
         </RcItem>
-        <None Include="assets\house.svg"/>
-        <None Include="assets\list.svg"/>
+        <None Include="assets\house.svg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SvgImage_14</ResourceId>
+        </None>
+        <None Include="assets\list.svg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SvgImage_15</ResourceId>
+        </None>
+        <None Include="..\LICENSE"/>
+        <None Include="..\README.md"/>
+        <None Include="..\RELEASE_NOTES.md"/>
+        <None Include="README.md"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -236,6 +288,24 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="..\LICENSE" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\README.md" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\RELEASE_NOTES.md" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName=".gitignore" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
@@ -254,19 +324,7 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="LICENSE" Configuration="Release" Class="ProjectFile">
-                    <Platform Name="Win32">
-                        <RemoteDir>.\</RemoteDir>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="README.md" Configuration="Debug" Class="ProjectFile">
-                    <Platform Name="Win32">
-                        <RemoteDir>.\</RemoteDir>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="README.md" Configuration="Release" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
@@ -278,7 +336,7 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="RELEASE_NOTES.md" Configuration="Release" Class="ProjectFile">
+                <DeployFile LocalName="Untitled1.md" Configuration="Release" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
@@ -1316,6 +1374,9 @@
                     <Platform Name="Win64">
                         <Operation>1</Operation>
                     </Platform>
+                    <Platform Name="Win64x">
+                        <Operation>1</Operation>
+                    </Platform>
                 </DeployClass>
                 <DeployClass Name="ProjectiOSDeviceDebug">
                     <Platform Name="iOSDevice32">
@@ -1608,6 +1669,7 @@
                 <ProjectRoot Platform="OSXARM64" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Win64x" Name="$(PROJECTNAME)"/>
             </Deployment>
             <Platforms>
                 <Platform value="Win32">True</Platform>

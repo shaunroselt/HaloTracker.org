@@ -14,7 +14,8 @@ uses
   Data_Achievements in 'Data\Data_Achievements.pas',
   Data_HTML_Achievements in 'Data\Data_HTML_Achievements.pas',
   uSettings in 'Pages\uSettings.pas' {Frame_Settings: TWebFrame} {*.html},
-  uCookies in 'Lib\uCookies.pas';
+  uCookies in 'Lib\uCookies.pas',
+  tPopUp in 'PopUps\tPopUp.pas' {Template_PopUp: TWebFrame} {*.html};
 
 {$R *.res}
 
