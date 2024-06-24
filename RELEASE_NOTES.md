@@ -18,6 +18,7 @@
 - [Version 1.0.5 (2024/04/03)](#version-105-20240403)
 - [Version 1.0.6 (2024/04/04)](#version-106-20240404)
 - [Version 1.0.7 (2024/04/06)](#version-107-20240406)
+- [Version 1.0.8 (2024/05/24)](#version-108-20240524)
   
 
 ## Version 1.0.0 (2024/03/07)
@@ -81,3 +82,16 @@ This is the first version of the website. The first version is quite basic and b
   - The Good, The Bad, and The Dead
   - Medal Completionist
 - Improved Achievement Filters
+
+## Version 1.0.8 (2024/05/24)
+- Added Achievement Guides in Halo MCC for:
+  - My Buddy Chips
+  - I Need A Weapon
+  - To War
+  - Halo
+  - Standard Operating Brocedure
+  - You Flew Pretty Good
+  - Truth and Reconciliation
+  - Into The Howling Dark
+- Improved Responsiveness
+- Improved Search Engine Optimization

@@ -4,6 +4,8 @@ object Frame_Achievements: TFrame_Achievements
   Width = 1610
   Height = 1059
   TabOrder = 0
+  OnMouseEnter = WebFrameResize
+  OnMouseLeave = WebFrameResize
   OnResize = WebFrameResize
   object layAchievementsContainer: TWebPanel
     AlignWithMargins = True
@@ -20,6 +22,7 @@ object Frame_Achievements: TFrame_Achievements
     BorderColor = clWhite
     ChildOrder = 1
     Color = clBlack
+    TabOrder = 0
     object layAchievementGuide: TWebScrollBox
       Left = 0
       Top = 178
@@ -64,6 +67,7 @@ object Frame_Achievements: TFrame_Achievements
         Align = alTop
         BorderStyle = bsNone
         Color = -1
+        TabOrder = 0
         object WebLabel1: TWebLabel
           AlignWithMargins = True
           Left = 199
@@ -109,6 +113,7 @@ object Frame_Achievements: TFrame_Achievements
           Font.Style = []
           ParentFont = False
           ShowCaption = False
+          TabOrder = 0
           OnClick = btnAchievementGuideAllClick
           OnMouseEnter = LinkMouseEnter
           OnMouseLeave = LinkMouseLeave
@@ -160,6 +165,7 @@ object Frame_Achievements: TFrame_Achievements
           Font.Style = []
           ParentFont = False
           ShowCaption = False
+          TabOrder = 1
           object lblAchievementGuideName: TWebLabel
             AlignWithMargins = True
             Left = 48
@@ -257,6 +263,7 @@ object Frame_Achievements: TFrame_Achievements
         BorderStyle = bsNone
         Color = -1
         ShowCaption = False
+        TabOrder = 0
         object lblSearch: TWebLabel
           AlignWithMargins = True
           Left = 20
@@ -322,7 +329,6 @@ object Frame_Achievements: TFrame_Achievements
           ParentFont = False
           TextHint = 'Enter Achievement Name'
           WidthPercent = 100.000000000000000000
-          ExplicitWidth = 407
         end
         object btnSearch: TWebButton
           AlignWithMargins = True
@@ -350,7 +356,6 @@ object Frame_Achievements: TFrame_Achievements
           OnClick = btnSearchClick
           OnMouseEnter = ButtonMouseEnter
           OnMouseLeave = ButtonMouseLeave
-          ExplicitWidth = 407
         end
         object cbPvPMultiplayer: TWebCheckBox
           AlignWithMargins = True
@@ -376,8 +381,6 @@ object Frame_Achievements: TFrame_Achievements
           State = cbChecked
           WidthPercent = 100.000000000000000000
           OnClick = FilterChange
-          ExplicitTop = 264
-          ExplicitWidth = 407
         end
         object cbCoopCampaign: TWebCheckBox
           AlignWithMargins = True
@@ -403,7 +406,6 @@ object Frame_Achievements: TFrame_Achievements
           State = cbChecked
           WidthPercent = 100.000000000000000000
           OnClick = FilterChange
-          ExplicitWidth = 407
         end
         object cbCampaign: TWebCheckBox
           AlignWithMargins = True
@@ -429,7 +431,6 @@ object Frame_Achievements: TFrame_Achievements
           State = cbChecked
           WidthPercent = 100.000000000000000000
           OnClick = FilterChange
-          ExplicitWidth = 407
         end
         object cbOther: TWebCheckBox
           AlignWithMargins = True
@@ -455,8 +456,6 @@ object Frame_Achievements: TFrame_Achievements
           State = cbChecked
           WidthPercent = 100.000000000000000000
           OnClick = FilterChange
-          ExplicitTop = 291
-          ExplicitWidth = 407
         end
         object cbPvEMultiplayer: TWebCheckBox
           AlignWithMargins = True
@@ -482,7 +481,6 @@ object Frame_Achievements: TFrame_Achievements
           State = cbChecked
           WidthPercent = 100.000000000000000000
           OnClick = FilterChange
-          ExplicitWidth = 407
         end
       end
       object layAchievementsGridRight: TWebPanel
@@ -495,6 +493,7 @@ object Frame_Achievements: TFrame_Achievements
         ChildOrder = 2
         Color = -1
         ShowCaption = False
+        TabOrder = 1
         object WebLabel10: TWebLabel
           AlignWithMargins = True
           Left = 20
@@ -527,7 +526,6 @@ object Frame_Achievements: TFrame_Achievements
           ChildOrder = 1
           Color = -1
           ScrollBars = ssVertical
-          ExplicitWidth = 1095
           object layAchievement0: TWebPanel
             AlignWithMargins = True
             Left = 40
@@ -542,7 +540,7 @@ object Frame_Achievements: TFrame_Achievements
             BorderColor = clWhite
             Color = 2366745
             ShowCaption = False
-            ExplicitWidth = 1015
+            TabOrder = 0
             object imgAchievement0: TWebImageControl
               AlignWithMargins = True
               Left = 13
@@ -601,7 +599,7 @@ object Frame_Achievements: TFrame_Achievements
               Padding.Top = 4
               Padding.Bottom = 6
               ShowCaption = False
-              ExplicitWidth = 701
+              TabOrder = 0
               object lblAchievementPercent0: TWebLabel
                 Left = 0
                 Top = 49
@@ -688,6 +686,7 @@ object Frame_Achievements: TFrame_Achievements
       ChildOrder = 1
       Color = -1
       ShowCaption = False
+      TabOrder = 2
       object imgGameLogo: TWebImageControl
         AlignWithMargins = True
         Left = 6
@@ -795,6 +794,7 @@ object Frame_Achievements: TFrame_Achievements
       Padding.Right = 13
       Padding.Bottom = 13
       ShowCaption = False
+      TabOrder = 3
       object pbAchievementsEarned: TWebProgressBar
         AlignWithMargins = True
         Left = 13

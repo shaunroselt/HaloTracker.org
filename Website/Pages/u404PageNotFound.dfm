@@ -20,10 +20,6 @@ object Frame_404PageNotFound: TFrame_404PageNotFound
     BorderColor = clWhite
     ChildOrder = 1
     Color = clBlack
-    ExplicitLeft = -384
-    ExplicitTop = -552
-    ExplicitWidth = 1623
-    ExplicitHeight = 866
     object WebLabel1: TWebLabel
       Left = 0
       Top = 0
@@ -43,7 +39,7 @@ object Frame_404PageNotFound: TFrame_404PageNotFound
       Layout = tlCenter
       ParentFont = False
       WidthPercent = 100.000000000000000000
-      ExplicitWidth = 15
+      ExplicitWidth = 2122
       ExplicitHeight = 74
     end
   end

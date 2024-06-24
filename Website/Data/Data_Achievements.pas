@@ -178,20 +178,26 @@ const
       description: 'Halo CE: Fight alongside Chips Dubbo and listen to his words of wisdom.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/a854ff330ea8625c2233b0283e94c90c9b2281df.jpg';
       percent_achieved: '46.1%';
-      Gamerscore: -1;
-      Guide_Description: '';
-      Guide_Video: [];
-      Filter: ['Other'];
+      Gamerscore: 5;
+      Guide_Description: '''
+      To obtain the "My Buddy Chips" achievement in Halo: Combat Evolved within Halo: The Master Chief Collection, you need to encounter the character Chips Dubbo during the Halo: Combat Evolved campaign. He can be found in various missions, but many players have had success on the mission "The Pillar of Autumn."
+
+      Keep your marines alive, especially during the section where Covenant forces board your ship, and listen for Dubbo’s distinctive dialogue. The achievement should unlock after this encounter.
+
+      It’s worth noting that the appearance of Chips Dubbo can be somewhat random, and if you’re having trouble finding him, try replaying the mission and taking it slow, ensuring you stay with your marines and listen to all their dialogue1.
+      ''';
+      Guide_Video: ['https://www.youtube.com/embed/j_ubTNeOK7o?si=gaL9yKGKGfLldkwy'];
+      Filter: ['Campaign','Co-op Campaign'];
     ),
     (
       name: 'I Need A Weapon';
       description: 'Halo: Reach: Complete Nightfall.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/07ae2a02a67b137ca72c865e37e0d18ad080a560.jpg';
       percent_achieved: '44.2%';
-      Gamerscore: -1;
-      Guide_Description: '';
-      Guide_Video: [];
-      Filter: ['Other'];
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "I Need A Weapon" achievement in Halo: Reach within Halo: The Master Chief Collection (MCC), you simply need to play through the "Nightfall" mission from beginning to end on any difficulty.';
+      Guide_Video: ['https://www.youtube.com/embed/h0_nCnLHvSI?si=hl5sAVGMHEI2ce9m'];
+      Filter: ['Campaign','Co-op Campaign'];
     ),
     (
       name: 'Bite The Hand';
@@ -228,30 +234,34 @@ const
       description: 'Halo: Reach: Complete Tip of the Spear.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/a3faee077d2a6a5225b7c24d1624fa110dfa0477.jpg';
       percent_achieved: '40.3%';
-      Gamerscore: -1;
-      Guide_Description: '';
-      Guide_Video: [];
-      Filter: ['Other'];
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "To War" achievement in Halo: Reach within Halo: The Master Chief Collection (MCC), you simply need to play through the "Tip of the Spear" mission from beginning to end on any difficulty.';
+      Guide_Video: ['https://www.youtube.com/embed/6dFZN6oa76k?si=6fWgG6gEDclKdciJ'];
+      Filter: ['Campaign','Co-op Campaign'];
     ),
     (
       name: 'Halo';
       description: 'Halo CE: Complete Halo.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/39e524b73b0aa4f3636de289ce6462ce3844b51d.jpg';
       percent_achieved: '40.3%';
-      Gamerscore: -1;
-      Guide_Description: '';
-      Guide_Video: [];
-      Filter: ['Other'];
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "Halo" achievement in Halo: Combat Evolved within Halo: The Master Chief Collection (MCC), you simply need to play through the "Halo" mission from beginning to end on any difficulty.';
+      Guide_Video: ['https://www.youtube.com/embed/EelKI7rWVZs?si=widbkuaLpJHfO8G9'];
+      Filter: ['Campaign','Co-op Campaign']
     ),
     (
       name: 'Standard Operating Brocedure';
       description: 'Complete any co-op level on Normal difficulty.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/e0ea3c0b63e780563e07c3d4ee8d1cffc157da0f.jpg';
       percent_achieved: '40.1%';
-      Gamerscore: -1;
-      Guide_Description: '';
+      Gamerscore: 10;
+      Guide_Description: '''
+      To unlock the "Standard Operating Brocedure" achievement within Halo: The Master Chief Collection (MCC), you simply need to complete any co-op level on Normal difficulty.
+
+      You can also obtain the "Standard Operating Brocedure" achievement by playing on Heroic or Legendary difficulty.
+      ''';
       Guide_Video: [];
-      Filter: ['Co-op Campaign'];
+      Filter: ['Co-op Campaign']
     ),
     (
       name: 'Going Bananas';
@@ -268,20 +278,20 @@ const
       description: 'Halo: Reach: Complete Long Night of Solace.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/992fe505f231c2c8da47082ee3a5c9b45edaab17.jpg';
       percent_achieved: '37.2%';
-      Gamerscore: -1;
-      Guide_Description: '';
-      Guide_Video: [];
-      Filter: ['Other'];
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "You Flew Pretty Good" achievement in Halo: Reach within Halo: The Master Chief Collection (MCC), you simply need to play through the "Long Night of Solace" mission from beginning to end on any difficulty.';
+      Guide_Video: ['https://www.youtube.com/embed/Ia6o_TF_Z80?si=pARXRPFlr_PA1hIQ'];
+      Filter: ['Campaign','Co-op Campaign']
     ),
     (
       name: 'Truth and Reconciliation';
       description: 'Halo CE: Complete The Truth and Reconciliation.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/998dede96b5044cf5f9dfe5817bd6832b4a27cb6.jpg';
       percent_achieved: '37.1%';
-      Gamerscore: -1;
-      Guide_Description: '';
-      Guide_Video: [];
-      Filter: ['Other'];
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "Truth and Reconciliation" achievement in Halo: Combat Evolved within Halo: The Master Chief Collection (MCC), you simply need to play through the "Truth and Reconciliation" mission from beginning to end on any difficulty.';
+      Guide_Video: ['https://www.youtube.com/embed/3i41xOJF5lQ?si=njom5qLUBpGvX2Sy'];
+      Filter: ['Campaign','Co-op Campaign']
     ),
     (
       name: 'Delicious Brains';
@@ -298,10 +308,10 @@ const
       description: 'Halo: Reach: Complete Exodus.';
       image: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/976730/d086c772ec43b8451d16e6ba8526bb1842f76ddb.jpg';
       percent_achieved: '35.4%';
-      Gamerscore: -1;
-      Guide_Description: '';
-      Guide_Video: [];
-      Filter: ['Other'];
+      Gamerscore: 10;
+      Guide_Description: 'To unlock the "Into The Howling Dark" achievement in Halo: Reach within Halo: The Master Chief Collection (MCC), you simply need to play through the "Exodus" mission from beginning to end on any difficulty.';
+      Guide_Video: ['https://www.youtube.com/embed/1GjzO6gaO9M?si=cv2-HPIgeX7sDbuj'];
+      Filter: ['Campaign','Co-op Campaign']
     ),
     (
       name: 'Gruntageddon';

@@ -4,6 +4,8 @@ object Frame_Search: TFrame_Search
   Width = 1566
   Height = 936
   TabOrder = 0
+  OnMouseEnter = WebFrameResize
+  OnMouseLeave = WebFrameResize
   OnResize = WebFrameResize
   object layBody: TWebScrollBox
     Left = 0
@@ -28,9 +30,7 @@ object Frame_Search: TFrame_Search
       BorderColor = clWhite
       ChildOrder = 1
       Color = clBlack
-      ExplicitLeft = 283
-      ExplicitTop = 40
-      ExplicitWidth = 1000
+      TabOrder = 0
       object imgLoginHeader: TWebImageControl
         Left = 0
         Top = 0
@@ -49,7 +49,7 @@ object Frame_Search: TFrame_Search
         Left = 40
         Top = 154
         Width = 1446
-        Height = 90
+        Height = 60
         Margins.Left = 40
         Margins.Top = 20
         Margins.Right = 40
@@ -72,7 +72,7 @@ object Frame_Search: TFrame_Search
         ParentFont = False
         WordWrap = True
         WidthPercent = 100.000000000000000000
-        ExplicitWidth = 918
+        ExplicitWidth = 1427
       end
       object lblTitle: TWebLabel
         AlignWithMargins = True
@@ -102,9 +102,9 @@ object Frame_Search: TFrame_Search
       object lblSearch: TWebLabel
         AlignWithMargins = True
         Left = 40
-        Top = 416
+        Top = 386
         Width = 1446
-        Height = 50
+        Height = 25
         Margins.Left = 40
         Margins.Top = 20
         Margins.Right = 40
@@ -124,12 +124,12 @@ object Frame_Search: TFrame_Search
         ParentFont = False
         WordWrap = True
         WidthPercent = 100.000000000000000000
-        ExplicitWidth = 851
+        ExplicitWidth = 936
       end
       object edtSearch: TWebEdit
         AlignWithMargins = True
         Left = 250
-        Top = 284
+        Top = 254
         Width = 1026
         Height = 46
         Margins.Left = 250
@@ -147,12 +147,11 @@ object Frame_Search: TFrame_Search
         ParentFont = False
         TextHint = 'Enter Xbox LIVE Gamertag'
         WidthPercent = 100.000000000000000000
-        ExplicitWidth = 500
       end
       object btnSearch: TWebButton
         AlignWithMargins = True
         Left = 250
-        Top = 350
+        Top = 320
         Width = 1026
         Height = 46
         Cursor = crHandPoint
@@ -174,7 +173,6 @@ object Frame_Search: TFrame_Search
         WidthPercent = 100.000000000000000000
         OnMouseEnter = ButtonMouseEnter
         OnMouseLeave = ButtonMouseLeave
-        ExplicitWidth = 500
       end
     end
   end

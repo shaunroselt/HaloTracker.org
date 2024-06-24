@@ -3,6 +3,7 @@ object frmMain: TfrmMain
   Height = 1353
   OnCreate = WebFormCreate
   OnMouseEnter = WebFormResize
+  OnMouseLeave = WebFormResize
   OnResize = WebFormResize
   OnShow = WebFormShow
   object BackgroundVideo: TWebMultimediaPlayer
@@ -31,6 +32,7 @@ object frmMain: TfrmMain
     ChildOrder = 1
     Color = clWindow
     ShowCaption = False
+    TabOrder = 1
     DesignSize = (
       1820
       1353)
@@ -45,6 +47,7 @@ object frmMain: TfrmMain
       ChildOrder = 1
       Color = 2366745
       ShowCaption = False
+      TabOrder = 0
       object WebLabel2: TWebLabel
         AlignWithMargins = True
         Left = 70
@@ -139,6 +142,7 @@ object frmMain: TfrmMain
         Padding.Right = 5
         Padding.Bottom = 5
         ShowCaption = False
+        TabOrder = 2
         Visible = False
         OnClick = OpenProfileDropDown
         OnMouseEnter = NavMouseEnter
@@ -218,6 +222,7 @@ object frmMain: TfrmMain
       ChildOrder = 2
       Color = clWhite
       ShowCaption = False
+      TabOrder = 1
     end
     object LayoutContainer: TWebPanel
       Left = 351
@@ -229,6 +234,7 @@ object frmMain: TfrmMain
       ChildOrder = 4
       Color = clWindow
       ShowCaption = False
+      TabOrder = 2
     end
     object MultiViewSplitter: TWebSplitter
       Left = 350
@@ -252,6 +258,7 @@ object frmMain: TfrmMain
       ChildOrder = 1
       Color = 2366745
       ShowCaption = False
+      TabOrder = 4
       object MultiView: TWebScrollBox
         Left = 0
         Top = 0
@@ -282,6 +289,7 @@ object frmMain: TfrmMain
           Font.Style = []
           ParentFont = False
           ShowCaption = False
+          TabOrder = 0
           object btnNavSearch: TWebPanel
             AlignWithMargins = True
             Left = 5
@@ -303,6 +311,7 @@ object frmMain: TfrmMain
             Font.Style = []
             ParentFont = False
             ShowCaption = False
+            TabOrder = 0
             OnClick = NavItemClick
             OnMouseEnter = NavMouseEnter
             OnMouseLeave = NavMouseLeave
@@ -366,6 +375,7 @@ object frmMain: TfrmMain
           Font.Style = []
           ParentFont = False
           ShowCaption = False
+          TabOrder = 1
           object layNavExpandCollapseAchievements: TWebPanel
             Left = 0
             Top = 0
@@ -382,6 +392,7 @@ object frmMain: TfrmMain
             Font.Style = []
             ParentFont = False
             ShowCaption = False
+            TabOrder = 0
             object btnNavExpandCollapseAchievements: TWebPanel
               AlignWithMargins = True
               Left = 5
@@ -403,6 +414,7 @@ object frmMain: TfrmMain
               Font.Style = []
               ParentFont = False
               ShowCaption = False
+              TabOrder = 0
               OnClick = NavExpandCollapseItemClick
               OnMouseEnter = NavMouseEnter
               OnMouseLeave = NavMouseLeave
@@ -482,6 +494,7 @@ object frmMain: TfrmMain
             Font.Style = []
             ParentFont = False
             ShowCaption = False
+            TabOrder = 1
             object btnNavHalo5: TWebPanel
               AlignWithMargins = True
               Left = 5
@@ -503,6 +516,7 @@ object frmMain: TfrmMain
               Font.Style = []
               ParentFont = False
               ShowCaption = False
+              TabOrder = 0
               OnClick = NavAchievementsItemClick
               OnMouseEnter = NavMouseEnter
               OnMouseLeave = NavMouseLeave
@@ -567,6 +581,7 @@ object frmMain: TfrmMain
             Font.Style = []
             ParentFont = False
             ShowCaption = False
+            TabOrder = 2
             object btnNavHaloReach: TWebPanel
               AlignWithMargins = True
               Left = 5
@@ -588,6 +603,7 @@ object frmMain: TfrmMain
               Font.Style = []
               ParentFont = False
               ShowCaption = False
+              TabOrder = 0
               OnClick = NavAchievementsItemClick
               OnMouseEnter = NavMouseEnter
               OnMouseLeave = NavMouseLeave
@@ -652,6 +668,7 @@ object frmMain: TfrmMain
             Font.Style = []
             ParentFont = False
             ShowCaption = False
+            TabOrder = 3
             object btnNavHaloMCC: TWebPanel
               AlignWithMargins = True
               Left = 5
@@ -673,6 +690,7 @@ object frmMain: TfrmMain
               Font.Style = []
               ParentFont = False
               ShowCaption = False
+              TabOrder = 0
               OnClick = NavAchievementsItemClick
               OnMouseEnter = NavMouseEnter
               OnMouseLeave = NavMouseLeave
@@ -737,6 +755,7 @@ object frmMain: TfrmMain
             Font.Style = []
             ParentFont = False
             ShowCaption = False
+            TabOrder = 4
             object btnNavHalo4: TWebPanel
               AlignWithMargins = True
               Left = 5
@@ -758,6 +777,7 @@ object frmMain: TfrmMain
               Font.Style = []
               ParentFont = False
               ShowCaption = False
+              TabOrder = 0
               OnClick = NavAchievementsItemClick
               OnMouseEnter = NavMouseEnter
               OnMouseLeave = NavMouseLeave
@@ -822,6 +842,7 @@ object frmMain: TfrmMain
             Font.Style = []
             ParentFont = False
             ShowCaption = False
+            TabOrder = 5
             object btnNavHalo3ODST: TWebPanel
               AlignWithMargins = True
               Left = 5
@@ -843,6 +864,7 @@ object frmMain: TfrmMain
               Font.Style = []
               ParentFont = False
               ShowCaption = False
+              TabOrder = 0
               OnClick = NavAchievementsItemClick
               OnMouseEnter = NavMouseEnter
               OnMouseLeave = NavMouseLeave
@@ -907,6 +929,7 @@ object frmMain: TfrmMain
             Font.Style = []
             ParentFont = False
             ShowCaption = False
+            TabOrder = 6
             object btnNavHalo3: TWebPanel
               AlignWithMargins = True
               Left = 5
@@ -928,6 +951,7 @@ object frmMain: TfrmMain
               Font.Style = []
               ParentFont = False
               ShowCaption = False
+              TabOrder = 0
               OnClick = NavAchievementsItemClick
               OnMouseEnter = NavMouseEnter
               OnMouseLeave = NavMouseLeave
@@ -992,6 +1016,7 @@ object frmMain: TfrmMain
             Font.Style = []
             ParentFont = False
             ShowCaption = False
+            TabOrder = 7
             object btnNavHalo2: TWebPanel
               AlignWithMargins = True
               Left = 5
@@ -1013,6 +1038,7 @@ object frmMain: TfrmMain
               Font.Style = []
               ParentFont = False
               ShowCaption = False
+              TabOrder = 0
               OnClick = NavAchievementsItemClick
               OnMouseEnter = NavMouseEnter
               OnMouseLeave = NavMouseLeave
@@ -1077,6 +1103,7 @@ object frmMain: TfrmMain
             Font.Style = []
             ParentFont = False
             ShowCaption = False
+            TabOrder = 8
             object btnNavHaloCE: TWebPanel
               AlignWithMargins = True
               Left = 5
@@ -1098,6 +1125,7 @@ object frmMain: TfrmMain
               Font.Style = []
               ParentFont = False
               ShowCaption = False
+              TabOrder = 0
               OnClick = NavAchievementsItemClick
               OnMouseEnter = NavMouseEnter
               OnMouseLeave = NavMouseLeave
@@ -1162,6 +1190,7 @@ object frmMain: TfrmMain
             Font.Style = []
             ParentFont = False
             ShowCaption = False
+            TabOrder = 9
             object btnNavHaloInfinite: TWebPanel
               AlignWithMargins = True
               Left = 5
@@ -1183,6 +1212,7 @@ object frmMain: TfrmMain
               Font.Style = []
               ParentFont = False
               ShowCaption = False
+              TabOrder = 0
               OnClick = NavAchievementsItemClick
               OnMouseEnter = NavMouseEnter
               OnMouseLeave = NavMouseLeave
@@ -1249,6 +1279,7 @@ object frmMain: TfrmMain
         Font.Style = []
         ParentFont = False
         ShowCaption = False
+        TabOrder = 1
         object btnNavSettings: TWebPanel
           AlignWithMargins = True
           Left = 5
@@ -1270,6 +1301,7 @@ object frmMain: TfrmMain
           Font.Style = []
           ParentFont = False
           ShowCaption = False
+          TabOrder = 0
           OnClick = NavItemClick
           OnMouseEnter = NavMouseEnter
           OnMouseLeave = NavMouseLeave
@@ -1326,6 +1358,7 @@ object frmMain: TfrmMain
       Anchors = [akTop, akRight]
       ChildOrder = 5
       Color = 2366745
+      TabOrder = 5
       Visible = False
       OnMouseLeave = layProfileDropDownMouseLeave
       object layNavSignOut: TWebPanel
@@ -1344,6 +1377,7 @@ object frmMain: TfrmMain
         Font.Style = []
         ParentFont = False
         ShowCaption = False
+        TabOrder = 0
         object btnNavSignOut: TWebPanel
           AlignWithMargins = True
           Left = 5
@@ -1365,6 +1399,7 @@ object frmMain: TfrmMain
           Font.Style = []
           ParentFont = False
           ShowCaption = False
+          TabOrder = 0
           OnClick = btnNavSignOutClick
           OnMouseEnter = NavMouseEnter
           OnMouseLeave = NavMouseLeave
@@ -1428,6 +1463,7 @@ object frmMain: TfrmMain
         Font.Style = []
         ParentFont = False
         ShowCaption = False
+        TabOrder = 1
         object btnNavProfile: TWebPanel
           AlignWithMargins = True
           Left = 5
@@ -1449,6 +1485,7 @@ object frmMain: TfrmMain
           Font.Style = []
           ParentFont = False
           ShowCaption = False
+          TabOrder = 0
           OnClick = NavItemClick
           OnMouseEnter = NavMouseEnter
           OnMouseLeave = NavMouseLeave
@@ -1502,8 +1539,8 @@ object frmMain: TfrmMain
     URL = 
       'https://www.mccachievementtracker.app/api/data/xbox/Shaun%20Rose' +
       'lt'
-    Left = 896
-    Top = 664
+    Left = 824
+    Top = 360
   end
   object GetAchievementsHaloInfinite: TWebHttpRequest
     URL = 'https://steamcommunity.com/stats/1240440/achievements'

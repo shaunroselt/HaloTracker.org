@@ -40,7 +40,14 @@ begin
 end;
 
 procedure TFrame_404PageNotFound.WebFrameResize(Sender: TObject);
+const
+  TestingConstant: String = 'Hello World!';
+var
+  TestingSomething: String;
+  I: UInt64;
 begin
+  For I := 0 to 10 do
+    TestingSomething := 'Hello World!';
   console.log('TFrame_404PageNotFound.WebFrameResize');
 end;
 

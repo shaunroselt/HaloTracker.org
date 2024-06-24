@@ -4,6 +4,8 @@ object Frame_Settings: TFrame_Settings
   Width = 1663
   Height = 906
   TabOrder = 0
+  OnMouseEnter = WebFrameResize
+  OnMouseLeave = WebFrameResize
   OnResize = WebFrameResize
   object laySettingsContainer: TWebPanel
     AlignWithMargins = True
@@ -20,6 +22,7 @@ object Frame_Settings: TFrame_Settings
     BorderColor = clWhite
     ChildOrder = 1
     Color = clBlack
+    TabOrder = 0
     object layGame: TWebPanel
       AlignWithMargins = True
       Left = 10
@@ -36,6 +39,7 @@ object Frame_Settings: TFrame_Settings
       ChildOrder = 1
       Color = -1
       ShowCaption = False
+      TabOrder = 0
       object lblGameName: TWebLabel
         AlignWithMargins = True
         Left = 55
@@ -92,6 +96,7 @@ object Frame_Settings: TFrame_Settings
       ChildOrder = 2
       Color = 2366745
       ShowCaption = False
+      TabOrder = 1
       object imgAchievement0: TWebImageControl
         AlignWithMargins = True
         Left = 13
@@ -124,6 +129,7 @@ object Frame_Settings: TFrame_Settings
         Padding.Top = 4
         Padding.Bottom = 6
         ShowCaption = False
+        TabOrder = 0
         object lblAchievementDescription0: TWebLabel
           Left = 0
           Top = 29
@@ -203,6 +209,7 @@ object Frame_Settings: TFrame_Settings
       ChildOrder = 2
       Color = 2366745
       ShowCaption = False
+      TabOrder = 2
       object WebImageControl1: TWebImageControl
         AlignWithMargins = True
         Left = 13
@@ -235,6 +242,7 @@ object Frame_Settings: TFrame_Settings
         Padding.Top = 4
         Padding.Bottom = 6
         ShowCaption = False
+        TabOrder = 0
         object lblAppDescription: TWebLabel
           Left = 0
           Top = 29
@@ -245,7 +253,7 @@ object Frame_Settings: TFrame_Settings
           Margins.Right = 0
           Margins.Bottom = 0
           Align = alClient
-          Caption = 'Version 1.0.7 | WEB | RELEASE | 2024/04/06'
+          Caption = 'Version 1.0.8 | WEB | RELEASE | 2024/05/24'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWhite
           Font.Height = -14
@@ -352,6 +360,7 @@ object Frame_Settings: TFrame_Settings
       ChildOrder = 2
       Color = 2366745
       ShowCaption = False
+      TabOrder = 3
       object layUsefulLinksTop: TWebPanel
         AlignWithMargins = True
         Left = 0
@@ -368,6 +377,7 @@ object Frame_Settings: TFrame_Settings
         ChildOrder = 2
         Color = 2366745
         ShowCaption = False
+        TabOrder = 0
         object WebImageControl2: TWebImageControl
           AlignWithMargins = True
           Left = 13
@@ -400,6 +410,7 @@ object Frame_Settings: TFrame_Settings
           Padding.Top = 4
           Padding.Bottom = 6
           ShowCaption = False
+          TabOrder = 0
           object WebLabel4: TWebLabel
             Left = 0
             Top = 4
@@ -440,6 +451,7 @@ object Frame_Settings: TFrame_Settings
         Font.Style = []
         ParentFont = False
         ShowCaption = False
+        TabOrder = 1
         object btnNavSourceCode: TWebPanel
           AlignWithMargins = True
           Left = 5
@@ -461,6 +473,7 @@ object Frame_Settings: TFrame_Settings
           Font.Style = []
           ParentFont = False
           ShowCaption = False
+          TabOrder = 0
           OnClick = btnNavSourceCodeClick
           OnMouseEnter = LinkMouseEnter
           OnMouseLeave = LinkMouseLeave
@@ -522,6 +535,7 @@ object Frame_Settings: TFrame_Settings
         Font.Style = []
         ParentFont = False
         ShowCaption = False
+        TabOrder = 2
         object btnNavLicense: TWebPanel
           AlignWithMargins = True
           Left = 5
@@ -543,6 +557,7 @@ object Frame_Settings: TFrame_Settings
           Font.Style = []
           ParentFont = False
           ShowCaption = False
+          TabOrder = 0
           OnClick = btnNavLicenseClick
           OnMouseEnter = LinkMouseEnter
           OnMouseLeave = LinkMouseLeave
@@ -604,6 +619,7 @@ object Frame_Settings: TFrame_Settings
         Font.Style = []
         ParentFont = False
         ShowCaption = False
+        TabOrder = 3
         object btnNavDownloadApp: TWebPanel
           AlignWithMargins = True
           Left = 5
@@ -625,6 +641,7 @@ object Frame_Settings: TFrame_Settings
           Font.Style = []
           ParentFont = False
           ShowCaption = False
+          TabOrder = 0
           OnClick = btnNavDownloadAppClick
           OnMouseEnter = LinkMouseEnter
           OnMouseLeave = LinkMouseLeave
@@ -686,6 +703,7 @@ object Frame_Settings: TFrame_Settings
         Font.Style = []
         ParentFont = False
         ShowCaption = False
+        TabOrder = 4
         object btnNavReportAProblem: TWebPanel
           AlignWithMargins = True
           Left = 5
@@ -707,6 +725,7 @@ object Frame_Settings: TFrame_Settings
           Font.Style = []
           ParentFont = False
           ShowCaption = False
+          TabOrder = 0
           OnClick = btnNavReportAProblemClick
           OnMouseEnter = LinkMouseEnter
           OnMouseLeave = LinkMouseLeave

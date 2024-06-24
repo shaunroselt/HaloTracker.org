@@ -430,6 +430,20 @@ begin
 end;
 
 procedure TfrmMain.WebFormCreate(Sender: TObject);
+  procedure SetLinks();
+  const
+    GameLink: String = '<a href="index.html?page=achievements&game=${GameBackendName}" onClick="event.preventDefault();" style="text-decoration: none; color:inherit;">${GameName}</a>';
+  begin
+    lblNavHaloMCC.HTML := GameLink.Replace('${GameBackendName}', 'HaloMCC').Replace('${GameName}', 'Halo MCC (All)');
+    lblNavHaloReach.HTML := GameLink.Replace('${GameBackendName}', 'HaloReach').Replace('${GameName}', 'Halo Reach');
+    lblNavHaloCE.HTML := GameLink.Replace('${GameBackendName}', 'HaloCE').Replace('${GameName}', 'Halo CE');
+    lblNavHalo2.HTML := GameLink.Replace('${GameBackendName}', 'Halo2').Replace('${GameName}', 'Halo 2');
+    lblNavHalo3.HTML := GameLink.Replace('${GameBackendName}', 'Halo3').Replace('${GameName}', 'Halo 3');
+    lblNavHalo3ODST.HTML := GameLink.Replace('${GameBackendName}', 'Halo3ODST').Replace('${GameName}', 'Halo 3 ODST');
+    lblNavHalo4.HTML := GameLink.Replace('${GameBackendName}', 'Halo4').Replace('${GameName}', 'Halo 4');
+    lblNavHalo5.HTML := GameLink.Replace('${GameBackendName}', 'Halo5').Replace('${GameName}', 'Halo 5');
+    lblNavHaloInfinite.HTML := GameLink.Replace('${GameBackendName}', 'HaloInfinite').Replace('${GameName}', 'Halo Infinite');
+  end;
 begin
   {$IFDEF RELEASE}
     if (GetQueryParam('EnableDebug').ToLower.Trim <> 'true') then
@@ -486,6 +500,8 @@ begin
 
   btnMultiView.ElementHandle.style.setProperty('border-radius', '5px');
   btnMultiView.ElementHandle.style.setProperty('border-width', '0');
+
+  SetLinks();
 
 
 //  GetAchievements.Execute(
